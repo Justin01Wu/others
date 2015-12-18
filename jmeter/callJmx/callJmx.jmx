@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="server" elementType="Argument">
+            <stringProp name="Argument.name">server</stringProp>
+            <stringProp name="Argument.value">${__property(server.name)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">${__property(server.port)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${server}</stringProp>
+        <stringProp name="HTTPSampler.port">${port}</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree==&gt;Just for Debug" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="test JMX get Attribute and call operation" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <longProp name="ThreadGroup.start_time">1445541288000</longProp>
+        <longProp name="ThreadGroup.end_time">1445541288000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <stringProp name="TestPlan.comments">         * call JMX to get root log level
+         * call JMX operation to get log level for some classes
+         * groovy sample comes from http://stackoverflow.com/questions/1751130/calling-jmx-mbean-method-from-a-shell-script
+         * performace to see https://blazemeter.com/blog/beanshell-vs-jsr223-vs-java-jmeter-scripting-its-performance
+
+</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">true</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">true</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <BSFSampler guiclass="TestBeanGUI" testclass="BSFSampler" testname="BSF Sampler(call JMX operation)" enabled="false">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">import java.lang.management.*
+import javax.management.*
+import javax.management.remote.*
+
+
+println &quot;call JMX operation in groovy\n&quot;
+// this sample comes from 
+// http://stackoverflow.com/questions/1751130/calling-jmx-mbean-method-from-a-shell-script
+
+// groovy performance :  https://blazemeter.com/blog/beanshell-vs-jsr223-vs-java-jmeter-scripting-its-performance
+
+
+String serverUrl = &apos;service:jmx:rmi:///jndi/rmi://localhost:9087/jmxrmi&apos;;
+          // this port 9087 is defined in your start.bat of tomcat
+
+String beanName = &quot;Welcome to VRe:type=VcapsLog4J&quot;;
+String classfullPath = &quot;bm.validusre.vcaps.cmc.service.AttachedDatabaseDao&quot;;
+
+JMXServiceURL url = new JMXServiceURL(serverUrl);	    
+   	   
+
+JMXConnector jmxc = JMXConnectorFactory.connect(url, null);
+
+
+def bean = new GroovyMBean(jmxc.MBeanServerConnection, beanName);
+
+ObjectName objectName = new ObjectName(beanName);
+
+Object[]  opParams = { classfullPath  };
+       
+String[]  opSig = { String.class.getName() };
+
+   
+//  Invoke operation
+//def msg  = mbsc.invoke(objectName, &quot;getClassOrPackageLevel&quot;, opParams, opSig);
+def msg = bean.getClassOrPackageLevel(classfullPath);
+
+
+println classfullPath+ &quot; log level=&quot; + msg;
+
+return classfullPath+ &quot; log level=&quot; + msg;
+
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </BSFSampler>
+        <hashTree/>
+        <BSFSampler guiclass="TestBeanGUI" testclass="BSFSampler" testname="BSF Sampler(get JMX attribute)" enabled="false">
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">import java.lang.management.*
+import javax.management.ObjectName
+import javax.management.remote.JMXConnectorFactory
+import javax.management.remote.JMXServiceURL
+
+println &quot;running in groovy\n&quot;
+
+
+def serverUrl = &apos;service:jmx:rmi:///jndi/rmi://localhost:9087/jmxrmi&apos;
+          // this port 9087 is defined in your start.bat of tomcat
+def url = new JMXServiceURL(serverUrl);	    
+	    	   
+//String beanName = &quot;Welcome to VRe:type=VcapsLog4J,id=0&quot;
+
+def jmxc = JMXConnectorFactory.connect(url, null);
+def mbsc = jmxc.getMBeanServerConnection();
+
+String beanName = &quot;Welcome to VRe:logger=root&quot;
+def log4jBean = new ObjectName(beanName);
+
+def logRoot = mbsc.getAttribute(log4jBean, &quot;priority&quot;).toString();
+println &quot;root log level=&quot; + logRoot;
+return &quot;root log level=&quot; + logRoot;
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </BSFSampler>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSR223 Sampler(call JMX operation)" enabled="true">
+          <stringProp name="cacheKey"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">import java.lang.management.*;
+import javax.management.*;
+import javax.management.remote.*;
+
+System.out.println( &quot;call JMX operation in Java BSF\n&quot;);
+
+String serverUrl = &quot;service:jmx:rmi:///jndi/rmi://localhost:9087/jmxrmi&quot;;
+          // this port 9087 is defined in your start.bat of tomcat
+
+String beanName = &quot;Welcome to VRe:type=VcapsLog4J&quot;;
+String classfullPath = &quot;bm.validusre.vcaps.cmc.service.AttachedDatabaseDao&quot;;
+
+JMXServiceURL url = new JMXServiceURL(serverUrl);	       	   
+
+JMXConnector jmxc = JMXConnectorFactory.connect(url, null);
+MBeanServerConnection mbsc = jmxc.getMBeanServerConnection();
+
+ObjectName objectName = new ObjectName(beanName);
+Object[]  opParams = { classfullPath  };       
+String[]  opSig = { String.class.getName() };
+
+   
+//  Invoke operation
+String msg  = (String) mbsc.invoke(objectName, &quot;getClassOrPackageLevel&quot;, opParams, opSig);
+
+
+return classfullPath+ &quot; log level=&quot; + msg;
+
+</stringProp>
+          <stringProp name="scriptLanguage">java</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
