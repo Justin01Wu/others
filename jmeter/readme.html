@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jmeter automation tips</title>
+    </head>    
+    <body>
+        <a name="menu"></a>
+        <h1>How to setup Jmeter test case</h1>
+        
+        <ul>
+            <li><a href="#GetJmeter">A. Get Jmeter</a></li>
+            <li><a href="#Setup">B. Set user.properties</a></li>
+            <li><a href="#tips">C. tips</a></li>
+            
+        </ul>
+
+        
+        <br/><br/><br/><br/>
+
+
+
+<a name="GetJmeter"></a>
+        <h2>A. Get Jmeter</h2>
+        
+        <a href="#menu">go back to Menu</a>
+        <pre>
+    Jmeter is Apache top project, it is a pure Java application. Installing it is just unzipping.
+The standard Jmeter doesn't support Json path, so we need a third Jmeter plugin do it:  JMeterPlugins-ExtrasLibs-1.4.0
+Recently Jmeter is updated to 3.0, The plugin doesn't work for it. so please find 2.x jmeter and download it.
+ </pre>
+        
+You can find downloading link from here:        
+        <a href="http://jmeter.apache.org/download_jmeter.cgi" target="_blank">Apache Jmeter download</a>
+                
+        <br/><br/>
+You can find downloading plug in from here:        
+        <a href="http://jmeter-plugins.org/downloads/all/" target="_blank">JMeterPlugins-ExtrasLibs download</a>        
+        
+        
+        <br/><br/><br/><br/>
+        
+        
+        <a name="Setup"></a>
+        
+<h2>B. Set user.properties</h2>
+        <a href="#menu">go back to Menu</a><br/>
+        
+                
+        Jmeter test cases are designed to run again any vaps QA server, so you need to set target server for it<br/>
+        open [jmeter]\bin\user.properties, then add those lines:<br/>
+        <pre>
+web.server=localhost
+web.port=8080
+
+# some test cases need to connect the target db
+db.server=CAVCEXPDB01
+db.name=vcaps_AC_Alloc_Demo
+
+        </pre>
+
+
+<br/><br/><br/><br/>
+
+<a href="#menu">go back to Menu</a><br/>
+
+<a name="Run"></a>
+
+
+<a name="tips"></a>
+<h2>C. tips</h2>
+    <a href="#menu">go back to Menu</a><br/>    
+	<pre>
+	Triditional people think it is hard to test JSON style RESTful API.
+	Like this link: ...
+	
+	But Jmeter natively support JSR223, it includes JavaScript, 
+	And JavaScript support JSON.parse and JSON.stringify, so verify and get data is easy in it.
+	for example: 
+	  var _myContract =  prev.getResponseDataAsString();
+      _myContract = JSON.parse(_myContract);
+      _myContract.cAnnualLimit = "1,800,001";
+      _myContract = JSON.stringify(_myContract, null, 4);
+	  vars.put("_myContract", _myContract);
+    </pre>
+	
+<br/><br/><br/><br/>
+
+    </body>
+</html>
