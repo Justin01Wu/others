@@ -108,10 +108,12 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
-        <stringProp name="TestPlan.comments">         * call JMX to get root log level
+        <stringProp name="TestPlan.comments">
+         * call JMX to get root log level
          * call JMX operation to get log level for some classes
          * groovy sample comes from http://stackoverflow.com/questions/1751130/calling-jmx-mbean-method-from-a-shell-script
          * performace to see https://blazemeter.com/blog/beanshell-vs-jsr223-vs-java-jmeter-scripting-its-performance
+         * JDBC Request(query all User)
 
 </stringProp>
       </ThreadGroup>
@@ -234,15 +236,21 @@ return dbUrlInfo.toString();
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request(query all User)" enabled="true">
           <stringProp name="dataSource">mainDb</stringProp>
-          <stringProp name="query">select * from vcapsUser</stringProp>
+          <stringProp name="query">select userId,userName from vcapsUser where userId&lt;100</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
           <stringProp name="queryType">Select Statement</stringProp>
           <stringProp name="resultSetHandler">Store as String</stringProp>
           <stringProp name="resultVariable"></stringProp>
-          <stringProp name="variableNames"></stringProp>
+          <stringProp name="variableNames">userId,userName</stringProp>
         </JDBCSampler>
+        <hashTree/>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
         <hashTree/>
       </hashTree>
     </hashTree>
