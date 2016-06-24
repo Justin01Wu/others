@@ -236,7 +236,7 @@ return dbUrlInfo.toString();
         <hashTree/>
         <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request(query all User)" enabled="true">
           <stringProp name="dataSource">mainDb</stringProp>
-          <stringProp name="query">select userId,userName from vcapsUser where userId&lt;100</stringProp>
+          <stringProp name="query">select userId,userName from vcapsUser where userId=2</stringProp>
           <stringProp name="queryArguments"></stringProp>
           <stringProp name="queryArgumentsTypes"></stringProp>
           <stringProp name="queryTimeout"></stringProp>
@@ -251,7 +251,22 @@ return dbUrlInfo.toString();
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
-        <hashTree/>
+        <hashTree>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="verify userName is lixin for userId 2" enabled="true">
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">var _userId =  vars.get(&quot;userId_1&quot;);
+var _userName =  vars.get(&quot;userName_1&quot;);
+if(_userName !== &quot;lixin&quot;){
+	AssertionResult.setFailureMessage(&quot;userName is not lixin for userId 2 &quot;);
+	AssertionResult.setFailure(true);	
+}
+</stringProp>
+            <stringProp name="scriptLanguage">javascript</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+        </hashTree>
       </hashTree>
     </hashTree>
   </hashTree>
