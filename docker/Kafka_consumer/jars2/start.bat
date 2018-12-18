@@ -1,0 +1,1 @@
+start java -cp "library-test.jar;./jars/*" com.justa.library.test.kafaka.ConsumerCreatorOnSASL

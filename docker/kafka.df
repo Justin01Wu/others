@@ -1,0 +1,31 @@
+
+# Dockerfile for Kafka
+#  from https://stackify.com/guide-docker-java/
+
+# Alpine Linux with OpenJDK JRE
+FROM openjdk:8-jre-alpine
+
+
+MAINTAINER  Author Name <wuyg719@gmail.com>
+
+RUN apk add bash
+
+# copy Jar into image
+COPY Kafka_consumer/* /usr/test/
+# run chmod +x /usr/kafka/bin/
+
+
+RUN mkdir /usr/kafka
+RUN wget http://apache.claz.org/kafka/2.1.0/kafka_2.12-2.1.0.tgz -P /usr/kafka/
+RUN tar -xvzf /usr/kafka/kafka_2.12-2.1.0.tgz -C /usr/kafka/
+
+#run /usr/kafka/kafka_2.12-2.1.0/bin/zookeeper-server-start.sh /usr/kafka/kafka_2.12-2.1.0/config/zookeeper.properties &
+
+# run application with this command line 
+#CMD ["/usr/bin/java", "-jar", "-Dspring.profiles.active=default", "/app.war"]
+
+CMD ["echo", " started 784..."]
+CMD ["/usr/bin/java", "-version"]
+
+CMD ["cd", "/usr/test"]
+CMD ["/usr/bin/java", "-cp", "/usr/test/scjp.jar", "com.scjp.test.App"]

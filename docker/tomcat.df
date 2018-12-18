@@ -1,0 +1,19 @@
+
+# Dockerfile for tomcat 8.5.33
+#  from https://stackify.com/guide-docker-java/
+
+# Alpine Linux with OpenJDK JRE
+FROM openjdk:8-jre-alpine
+
+
+MAINTAINER  Author Name <wuyg719@gmail.com>
+
+RUN apk add bash
+
+# install tomcat 8
+RUN mkdir /usr/tomcat8
+RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz -P /usr/tomcat8/
+RUN tar -xvzf /usr/tomcat8/apache-tomcat-8.5.35.tar.gz -C /usr/tomcat8/
+
+# run application with this command line 
+RUN /usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh
