@@ -12,8 +12,11 @@ MAINTAINER  Author Name <wuyg719@gmail.com>
 COPY Kafka_consumer/* /usr/test/
 # run chmod +x /usr/kafka/bin/
 
-# CMD ["echo", " started 784..."]
-# CMD ["/usr/bin/java", "-version"]
-# CMD ["cd", "/usr/test"]
+CMD ["echo", " started 784..."]
+CMD ["/usr/bin/java", "-version"]
+CMD ["cd", "/usr/test"]
 
+# only support last CMD, previous are ignored
 CMD ["/usr/bin/java", "-cp", "/usr/test/scjp.jar", "com.scjp.test.App"]
+
+

@@ -16,4 +16,11 @@ RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomc
 RUN tar -xvzf /usr/tomcat8/apache-tomcat-8.5.35.tar.gz -C /usr/tomcat8/
 
 # run application with this command line 
-RUN /usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh
+# RUN /usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh
+# CMD ["sh","/usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh", "&"]
+
+# CMD ["/usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh"]
+# CMD service tomcat8 start && tail -f /var/lib/tomcat7/logs/catalina.out
+
+# run tomcat as service and hold it
+CMD ["/usr/tomcat8/apache-tomcat-8.5.35/bin/catalina.sh", "run"]
