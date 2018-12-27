@@ -1,21 +1,24 @@
 
-# Dockerfile for Jersey2 sampe on tomcat 8.5.33
+# Dockerfile for Jersey2 sample on tomcat 8.5.33
+# it is a demo show you how to build up a Java web application from the ground
 #  from https://stackify.com/guide-docker-java/
 
-# Alpine Linux with OpenJDK JRE
+# Alpine Linux with OpenJDK 8
 FROM openjdk:8-jdk-alpine
-
 
 MAINTAINER  Author Name <wuyg719@gmail.com>
 
+# install necessary software 
 RUN apk add bash
 RUN apk add git
 RUN apk add maven
 
+# download and build Java Jar which is needed for the web application
 RUN mkdir /usr/jars
 RUN git clone https://github.com/Justin01Wu/ObjectTreeCreator.git /usr/jars
 RUN mvn clean install -f /usr/jars/source/pom.xml
 
+# download and build Java web application
 RUN mkdir /usr/myapp
 RUN git clone https://github.com/Justin01Wu/WebApp.git /usr/myapp
 RUN mvn clean package -f /usr/myapp/jersey2/pom.xml
@@ -25,6 +28,7 @@ RUN mkdir /usr/tomcat8
 RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz -P /usr/tomcat8/
 RUN tar -xvzf /usr/tomcat8/apache-tomcat-8.5.35.tar.gz -C /usr/tomcat8/
 
+# install web application
 RUN cp /usr/myapp/jersey2/target/jersey2.war /usr/tomcat8/apache-tomcat-8.5.35/webapps/
 
 
