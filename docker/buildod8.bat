@@ -11,3 +11,7 @@ docker commit -a "Justin Wu" dbe3c3b0991a
 rem tag it to a good name
 docker tag e9c45e6e3a95 dev/kafka:2.1.0
 
+rem create docker image for Jersey2
+docker build -f jersey2.df -t dev/jersey2 .
+
+

@@ -1,0 +1,39 @@
+
+# Dockerfile for Jersey2 sampe on tomcat 8.5.33
+#  from https://stackify.com/guide-docker-java/
+
+# Alpine Linux with OpenJDK JRE
+FROM openjdk:8-jdk-alpine
+
+
+MAINTAINER  Author Name <wuyg719@gmail.com>
+
+RUN apk add bash
+RUN apk add git
+RUN apk add maven
+
+RUN mkdir /usr/jars
+RUN git clone https://github.com/Justin01Wu/ObjectTreeCreator.git /usr/jars
+RUN mvn clean install -f /usr/jars/source/pom.xml
+
+RUN mkdir /usr/myapp
+RUN git clone https://github.com/Justin01Wu/WebApp.git /usr/myapp
+RUN mvn clean package -f /usr/myapp/jersey2/pom.xml
+
+# install tomcat 8
+RUN mkdir /usr/tomcat8
+RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz -P /usr/tomcat8/
+RUN tar -xvzf /usr/tomcat8/apache-tomcat-8.5.35.tar.gz -C /usr/tomcat8/
+
+RUN cp /usr/myapp/jersey2/target/jersey2.war /usr/tomcat8/apache-tomcat-8.5.35/webapps/
+
+
+# run application with this command line 
+# RUN /usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh
+# CMD ["sh","/usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh", "&"]
+
+# CMD ["/usr/tomcat8/apache-tomcat-8.5.35/bin/startup.sh"]
+# CMD service tomcat8 start && tail -f /var/lib/tomcat7/logs/catalina.out
+
+# run tomcat as service and hold it
+CMD ["/usr/tomcat8/apache-tomcat-8.5.35/bin/catalina.sh", "run"]
