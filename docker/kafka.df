@@ -10,9 +10,16 @@ MAINTAINER  Author Name <wuyg719@gmail.com>
 
 RUN apk add bash
 
+#prepare kafka_server.sh file
+RUN mkdir /usr/test
+RUN echo '#!/bin/bash' >> /usr/test/kafka_server.sh
+RUN echo 'echo "start Kafak on 9092"' >> /usr/test/kafka_server.sh
+RUN echo '/usr/kafka/kafka_2.12-2.1.0/bin/zookeeper-server-start.sh /usr/kafka/kafka_2.12-2.1.0/config/zookeeper.properties > /var/log/zookeeper.out &' >> /usr/test/kafka_server.sh
+RUN echo '/usr/kafka/kafka_2.12-2.1.0/bin/kafka-server-start.sh /usr/kafka/kafka_2.12-2.1.0/config/server.properties > /var/log/kafka.out &' >> /usr/test/kafka_server.sh
+RUN chmod +x /usr/test/kafka_server.sh
+
 # copy Jar into image
-COPY Kafka_consumer/* /usr/test/
-# run chmod +x /usr/kafka/bin/
+#COPY Kafka_consumer/* /usr/test/
 
 
 RUN mkdir /usr/kafka
