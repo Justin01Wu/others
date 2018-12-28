@@ -12,4 +12,6 @@ rem docker run -p 8686:8080 -it dev/tomcat8.5.35 bash
 
 rem docker run -p 8686:8080 -it dev/jersey2 bash
 
+rem docker run -p 8686:8080 -it dev/vcaps3 bash
+
 

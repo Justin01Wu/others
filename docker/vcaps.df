@@ -1,0 +1,22 @@
+
+# Dockerfile for vcaps sample on tomcat 8.5.33
+# it is a demo show you how to build up a Java web application from the ground
+#  from https://stackify.com/guide-docker-java/
+
+# Alpine Linux with OpenJDK 8
+FROM openjdk:8-jdk-alpine
+
+MAINTAINER  Author Name <wuyg719@gmail.com>
+
+# install necessary software 
+RUN apk add bash
+RUN apk add subversion
+RUN apk add maven
+
+# download and build Java web application
+RUN mkdir /usr/vcaps
+RUN mkdir /tmp/vcaps
+RUN svn checkout --non-interactive --no-auth-cache --username justin.wu --password SG23ZK44 svn://cavcops03/vcaps_win/trunk/main/ /usr/vcaps
+
+#RUN mvn clean install -f /usr/vcaps/pom.xml
+
