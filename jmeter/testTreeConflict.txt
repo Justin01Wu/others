@@ -1,4 +1,6 @@
 
-This is a simple plain text to test tree conflict
+This is a simple plain text to test tree conflict.
+
+add a new line
 
 Second line
