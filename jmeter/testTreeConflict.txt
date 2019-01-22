@@ -1,0 +1,4 @@
+
+This is a simple plain text to test tree conflict
+
+Second line
