@@ -16,7 +16,12 @@ RUN apk add maven
 # download and build Java web application
 RUN mkdir /usr/vcaps
 RUN mkdir /tmp/vcaps
+
+RUN chmod +w /tmp/vcaps
+
 RUN svn checkout --non-interactive --no-auth-cache --username justin.wu --password SG23ZK44 svn://cavcops03/vcaps_win/trunk/main/ /usr/vcaps
 
-#RUN mvn clean install -f /usr/vcaps/pom.xml
+# svn update --non-interactive --no-auth-cache --username justin.wu --password SG23ZK44
+
+RUN mvn clean install -f /usr/vcaps/pom.xml
 
