@@ -17,6 +17,8 @@ rem docker run -p 8686:8080 -it dev/vcaps3 bash
 rem attach host folder to container
 rem docker run -p 8686:8080 -it -v C:/projects/merging/vcaps/main:/outside dev/vcaps3 bash
 
+rem docker run -p 8686:8080 -it dev/win10 
+
 
 
 

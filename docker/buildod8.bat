@@ -18,4 +18,6 @@ docker build -f jersey2.df -t dev/jersey2 .
 rem create docker image for vcaps3
 docker build -f vcaps.df -t dev/vcaps3 .
 
+docker build -f win10.df -t dev/win10 .
+
 

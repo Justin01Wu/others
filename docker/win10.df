@@ -1,0 +1,8 @@
+
+# Dockerfile for windows 10 powershell
+# Dockerfile for windows 10 powershell
+
+FROM mcr.microsoft.com/powershell
+
+MAINTAINER  Author Name <wuyg719@gmail.com>
+
