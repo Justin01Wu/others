@@ -2,9 +2,7 @@ import boto3
 
 #Explicit Client Configuration
 
-polly = boto3.client('polly',
-	region_name='us-east-1'
-)
+polly = boto3.client('polly')
 mySentence = ('Please log in to start creating quizzes to practice and study. '
 	'If you haven’t yet created an account, follow the Create Account link to get started.'
 	' Once you have an account created and are logged in, '
