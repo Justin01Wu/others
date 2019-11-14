@@ -9,9 +9,10 @@ mySentence = ('Hello, AWS user. Please log in to start creating quizzes to pract
 	'you’ll be able to redeem your Access Code or PIN to add products to your account.')
 result = polly.synthesize_speech(Text=mySentence,
 	OutputFormat='mp3',
+	LexiconNames=['awsLexicon'],
 	VoiceId='Justin')
 
 # Save the Audio from the response
 audio = result['AudioStream'].read()
-with open("helloworld.mp3","wb") as file:
+with open("helloworldWithLexicon.mp3","wb") as file:
 	file.write(audio)
