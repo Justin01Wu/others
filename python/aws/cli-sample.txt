@@ -1,5 +1,5 @@
 
-
+aws polly describe-voices --language en-US --output table
 aws polly put-lexicon --name awsLexicon --content file://aws-lexicon.xml  --region us-east-1
 
 aws polly synthesize-speech help
