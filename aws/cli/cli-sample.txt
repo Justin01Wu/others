@@ -4,3 +4,7 @@ aws polly put-lexicon --name awsLexicon --content file://aws-lexicon.xml  --regi
 
 aws polly synthesize-speech help
 aws polly synthesize-speech --text "Hello AWS World!" --voice-id Joanna --output-format mp3 hello.mp3 --lexicon-names="awsLexicon" --region us-east-1
+
+aws s3 ls
+aws s3 ls justa
+aws glacier list-vaults --account-id -
