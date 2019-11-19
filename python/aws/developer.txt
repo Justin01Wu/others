@@ -1,0 +1,5 @@
+
+linux academy ?
+
+python -m pip install --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --user
+pip install boto3 --upgrade --trusted-host pypi.org --trusted-host files.pythonhosted.org  --user
