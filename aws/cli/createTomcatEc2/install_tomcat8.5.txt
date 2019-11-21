@@ -17,6 +17,17 @@ git clone https://github.com/Justin01Wu/webUI.git
 cd webUI
 mvn clean package
 
+# get my another web application
+cd /usr
+mkdir ui2
+cd ui2
+
+git clone https://github.com/Justin01Wu/ObjectTreeCreator.git
+mvn clean install -f /usr/ui2/ObjectTreeCreator/source/pom.xml
+
+git clone https://github.com/Justin01Wu/WebApp.git
+mvn clean install -f /usr/ui2/WebApp/jersey2/pom.xml
+
 # install Tomcat 8 
 amazon-linux-extras install tomcat8.5 -y
 
@@ -25,6 +36,8 @@ service tomcat.service start
 
 # install web application
 cp /usr/ui/webUI/target/webUI-1.0-SNAPSHOT.war /usr/share/tomcat/webapps/webUI.war
+cp /usr/ui2/WebApp/jersey2/target/jersey2.war /usr/share/tomcat/webapps/jersey2.war
+
 
 #Set Auto Start for Tomcat Service
 systemctl enable tomcat.service
