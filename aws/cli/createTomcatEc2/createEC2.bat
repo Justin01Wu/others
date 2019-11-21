@@ -9,3 +9,6 @@ set para3=--user-data file://install_tomcat8.5.txt
 
 echo aws ec2 run-instances %para1%  %para2% %para3%
 aws ec2 run-instances %para1%  %para2% %para3%
+
+rem please check /var/log/cloud-init-output.log for failure
+rem or check system log from AWS console (sometimes it will be truncated)
