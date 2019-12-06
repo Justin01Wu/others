@@ -2,7 +2,10 @@
     "AWSTemplateFormatVersion": "2010-09-09",
 	"Resources" : {
 		"justaMvc719" : {
-			"Type": "AWS::S3::Bucket"
+			"Type": "AWS::S3::Bucket",
+			"Properties": {
+				"BucketName": "justa-mvc-719"
+			}
 		}
 	},
 	"Outputs" : {
