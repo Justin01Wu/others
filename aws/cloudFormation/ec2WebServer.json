@@ -41,5 +41,12 @@
         }
       }
     }
-  }
+  },  
+  "Outputs" : {
+	"AppEndpoint" : {
+	"Description" : "URL to access the application",
+	"Value" : { "Fn::Join": [ "", [ "http://", { "Fn::GetAtt": [ "EC2TomcatServer", "PublicDnsName" ] },
+":8080/scwcd" ] ] }
+}
+}
 }
