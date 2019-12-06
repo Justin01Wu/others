@@ -30,7 +30,7 @@
                 "\n",
                 "yum install git -y",
                 "\n",
-                "yum install maven -y",
+                "aws s3 cp s3://justa-pipeline/scwcd/scwcd/target/scwcd.war /usr/share/tomcat/webapps/",
                 "\n",
                 "amazon-linux-extras install tomcat8.5 -y",
                 "\n",
