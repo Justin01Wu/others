@@ -1,0 +1,45 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "EC2TomcatServer": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-00dc79254d0461090",
+        "InstanceType": "t2.micro",
+        "KeyName": "MyUser2KP",
+		"SecurityGroups": ["WebDMZ"],
+		"IamInstanceProfile":"WebServerRole",
+        "Tags": [
+          {
+            "Key": "Role",
+            "Value": "Test Instance"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                "#!/bin/bash -ex",
+                "\n",
+                "yum update -y",
+                "\n",
+                "yum install java-1.8.0-openjdk-devel -y",
+                "\n",
+                "yum install git -y",
+                "\n",
+                "yum install maven -y",
+                "\n",
+                "amazon-linux-extras install tomcat8.5 -y",
+                "\n",
+                "service tomcat.service start",
+                "\n",
+                "systemctl enable tomcat.service"
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+}
