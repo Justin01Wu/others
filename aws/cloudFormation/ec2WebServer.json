@@ -47,13 +47,14 @@
                 "\n",
                 "yum install java-1.8.0-openjdk-devel -y",
                 "\n",
-                "aws s3 cp s3://justa-pipeline/scwcd/scwcd/target/scwcd.war /usr/share/tomcat/webapps/",
-                "\n",
                 "amazon-linux-extras install tomcat8.5 -y",
                 "\n",
                 "service tomcat.service start",
                 "\n",
-                "systemctl enable tomcat.service"
+                "systemctl enable tomcat.service",
+				"\n",
+				"aws s3 cp s3://justa-pipeline/scwcd/scwcd/target/scwcd.war /usr/share/tomcat/webapps/",
+                "\n"
               ]
             ]
           }
