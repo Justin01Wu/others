@@ -7,8 +7,10 @@
         "ImageId": "ami-00dc79254d0461090",
         "InstanceType": "t2.micro",
         "KeyName": "MyUser2KP",
-		"SecurityGroups": ["WebDMZ"],
-		"IamInstanceProfile":"WebServerRole",
+        "SecurityGroups": [
+          "WebDMZ"
+        ],
+        "IamInstanceProfile": "WebServerRole",
         "Tags": [
           {
             "Key": "Role",
@@ -41,12 +43,25 @@
         }
       }
     }
-  },  
-  "Outputs" : {
-	"AppEndpoint" : {
-	"Description" : "URL to access the application",
-	"Value" : { "Fn::Join": [ "", [ "http://", { "Fn::GetAtt": [ "EC2TomcatServer", "PublicDnsName" ] },
-":8080/scwcd" ] ] }
-}
-}
+  },
+  "Outputs": {
+    "AppEndpoint": {
+      "Description": "URL to access the application",
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "http://",
+            {
+              "Fn::GetAtt": [
+                "EC2TomcatServer",
+                "PublicDnsName"
+              ]
+            },
+            ":8080/scwcd"
+          ]
+        ]
+      }
+    }
+  }
 }
