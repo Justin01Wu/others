@@ -11,8 +11,22 @@
       ]
     }
   },
+  "Conditions": {
+    "CreateProdResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "EnvType"
+        },
+        "prod"
+      ]
+    }
+  },
   "Resources": {
-    "EC2TomcatServer": {
+    "ProdS3Bucket": {
+      "Type": "AWS::S3::Bucket",
+      "Condition": "CreateProdResources"
+    },
+	"EC2TomcatServer": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
         "ImageId": "ami-00dc79254d0461090",
@@ -48,7 +62,12 @@
     }
   },
   "Outputs": {
-    "AppEndpoint": {
+    "ProdBucketName": {
+      "Value": {
+        "Ref": "ProdS3Bucket"
+      }
+    },
+	"AppEndpoint": {
       "Description": "URL to access the application",
       "Value": {
         "Fn::Join": [
