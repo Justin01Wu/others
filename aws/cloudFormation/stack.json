@@ -1,0 +1,17 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "mySecurityGroup": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://justa-pipeline.s3.amazonaws.com/cloudFormation/SecurityGroup.json"
+      }
+    },
+    "myS3Bucket": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://justa-pipeline.s3.amazonaws.com/cloudFormation/s3Output.json"
+      }
+    }
+  }
+}
