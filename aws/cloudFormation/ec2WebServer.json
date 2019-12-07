@@ -64,6 +64,7 @@
   },
   "Outputs": {
     "ProdBucketName": {
+	"Condition": "CreateProdResources",
       "Value": {
         "Ref": "ProdS3Bucket"
       }
