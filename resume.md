@@ -84,7 +84,7 @@ Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Li
 #### Environment: 
 Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven, Jenkins, Git, system integration, Agile, scrum
 
-## Tungle Corp. Waterloo (www.tungle.com) 2008.08-2011.04
+## Tungle Corp. Waterloo 2008.08-2011.04
 ### Role: Senior Java Developer
 
  - Identify, analyze, and capture system requirements, translate  into specifications and design
