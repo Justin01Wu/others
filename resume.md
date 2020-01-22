@@ -1,5 +1,5 @@
 # Justin Wu
-N2V 2X1, Waterloo, ON  • justin01.wu@gmail.com  • 226-338-5780
+L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780
 
 http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Solution Architect / Sr Java developer/Full stack Developer
@@ -31,11 +31,13 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
-- Successfully modernize 12 years old underwriter pricing system in low cost while adding new functions which failed many times before, including splitting into small projects, converting some parts into micro service and moving some into cloud
+- Successfully modernize 12 years old underwriter pricing system in low cost while adding new functions
+- Split VCAPS into two application and 5 modules
+- Convert some parts of VCAPS into micro service and moving some into cloud
 - Have the highest production rate on coding, document, tickets with the best quality in the team
 - Coordinated 5 developers on the new cession workflow to meet tough deadline,which finished about 200 developer tickets in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
-- Conduct most of technical framework switching and upgrading in the VCAPS
+- Conduct most of technical framework switching and upgrading in the VCAPS: log4j, Jersey, Angularjs, Maven, Spnego SSO, web component and etc.
 - Achieve user friendly UI in the low cost
 - Integrate with SICS,  KeyCloak, Active Directory, API gateway, and Exchange server
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
