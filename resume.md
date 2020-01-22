@@ -18,11 +18,11 @@ http://www.linkedin.com/in/justin01wu
 Type | Skills
 ------------ | -------------
 Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, XML, 
-Platform | AWS, Azure, Linux, Docker, Lamdba
-Framework | Spring, Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
-Database | Oracle, MySQL, SQL Server, NoSQL, Cassandra, DynamoDb, Hibernate, JPA, MyBatis
-UI | AngularJs, TypeScript, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, Http2, web component 
-CI/CD | Maven, Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA
+Platform | Linux(10yrs), AWS, Azure, , Docker, Lamdba
+Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
+Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, Cassandra, DynamoDb, Hibernate, JPA, MyBatis
+UI | AngularJs(5yrs), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, Http2, web component 
+CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
 Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
 Security | OAuth , KeyCloak, API Gateway, OpenID, Spnego, Kerberos, NTLM
