@@ -28,7 +28,7 @@ Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distribu
 Security | OAuth , KeyCloak, API Gateway, OpenID, Spnego, Kerberos, NTLM
 Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 
-## WORK EXPERIENCE: 
+# WORK EXPERIENCE: 
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
 - Successfully modernize 12 years old underwriter pricing system in low cost while adding new functions which failed many times before, including splitting into small projects, converting some parts into micro service and moving some into cloud
@@ -83,6 +83,28 @@ Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Li
  - Cover more than a half functional test cases in the automation testing
 #### Environment: 
 Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven, Jenkins, Git, system integration, Agile, scrum
+
+## Tungle Corp. Waterloo (www.tungle.com) 2008.08-2011.04
+### Role: Senior Java Developer
+
+ - Identify, analyze, and capture system requirements, translate  into specifications and design
+ - Lead server side function implementation and integration with web UI, mobile phone, and plug-ins in rapid web 2 applications  - - -development, including system analysis, system infrastructure, solution evaluation, risk analysis, algorithm development
+ - Improve server side service framework to support multiple type request, implement  piggyback, authorization and so on
+ - Create automation testing environment, conduct test-driven development process
+ - Resolve hundreds of problems in a complicated server environment
+ - Conduct automated testing processes including functional, integration, disaster recovery, performance and load testing
+ - Improve automation nightly building and deployment 
+ - Design and implement state machine for meeting flow
+ - Performance tuning on 300k users web based application, including bottleneck finding, crash report, database query analysis, algorithm improvement and hibernate tuning 
+ - Re-factor code and design for testability, maintainability, performance and scalability
+ - Migrate data between development releases
+ - Create and maintain meeting XML schemas, handle iCalendar data
+ - High volume asynchronous transaction on data integration
+ - Designed and implemented advance full text search and yellow page function
+ - Share knowledge with new team members
+#### Environment: 
+Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax, JQuery, SOAP, CSS, Mysql, Mysql query analyzer, Eclipse, Hibernate, Junit, Jmeter, JavaScript, Jmock, Ant, Hudson, Selenium, Ant, Restful, XML/SOAP, XSD, XSLT, XmlSpy, Subversion, refactoring, UML, Firebug, MQ, JMS, MDB, system integration, Dependency Injection(DI), Guice, Agile development, Apache, Lucene
+
 
 
 
