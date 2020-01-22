@@ -63,5 +63,27 @@ Java, JavaScript, Html5, Web 2.0, Ajax, RESTful, JQuery, AngularJs, JsTree, Micr
 #### Environment: 
 Java, Spring, JavaScript, Linux, Geronimo, Cassandra, Html5, Web 2.0, Ajax, RESTful, JQuery, Ember, RequireJs, Bootstrap, CSS, Eclipse, Junit, Json, Mockjax, Maven, Jenkins, Selenium, Fiddler, perforce, refactoring, Firebug, system integration, Agile, Scrum, JIRA
 
+### Project: Oauth OpenId provider for BBM Channel services
+#### Role: Senior Software Developer
+
+ - Design and implement prototype of Oauth OpenId provider for BBM Channel services
+ - Implement authorizing page and flow
+ - Handle special flows for openId return
+ - Implement revoke flow and page
+ - Implement sample client code for provider
+#### Environment: 
+Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Linux, Json, Geronimo, JavaScript,  - Cassandra, Web 2.0, Ajax, JQuery, RESTful, CSS, Eclipse, Junit, Maven, Jenkins, perforce, Firebug, system integration, Agile
+### Project: Calendar application for Blackberry 10
+#### Role: Senior Software Developer
+
+ - Conduct automation testing on Calendar application for Blackberry 10
+ - Handle calendar event for multiple calendar sources, including Google calendar, outlook calendar, domino calendar etc.
+ - Handle data in Blackberry 10 device
+ - Control Blackberry 10 UI interface
+ - Cover more than a half functional test cases in the automation testing
+#### Environment: 
+Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven, Jenkins, Git, system integration, Agile, scrum
+
+
 
 
