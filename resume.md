@@ -17,7 +17,7 @@ http://www.linkedin.com/in/justin01wu
 ## TECHNICAL SKILLS
 Type | Skills
 ------------ | -------------
-Language | Java, JavaScript, TypeScript, Python, C#, XML, SQL
+Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, XML, 
 Platform | AWS, Azure, Linux, Docker, Lamdba
 Framework | Spring, Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
 Database | Oracle, MySQL, SQL Server, NoSQL, Cassandra, DynamoDb, Hibernate, JPA, MyBatis
