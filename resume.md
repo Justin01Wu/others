@@ -41,4 +41,27 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, modularity design,  encapsulation, dependency management
 - Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
+- Improve security by introduce Kerberos SSO and SSL
+#### Environment: 
+Java, JavaScript, Html5, Web 2.0, Ajax, RESTful, JQuery, AngularJs, JsTree, MicroService, CSS3, Eclipse, Junit, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda,AWS, MyBatis, Spring boot
+
+## Blackberry 2011.04-2014.07
+### Project: BBM channel and BBM channel admin portal 
+#### Role: Senior Application Software Developer
+
+ - Design and implement admin portal on EmberJs framework with responsive design
+ - Implement general proxy for Restful request 
+ - Improve image uploading process, including resizing and compression
+ - Improve quality for channel manage console
+ - Handle cross browser issues
+ - Design and implement animated Gif on camera for channel manage console
+ - Handle multiple language switching for channel manage console
+ - Set up maven build, including js css file timestamp, compression and merging, handlebar pre-compile
+ - Create regular express for 200 emoticon strings and their alternatives
+ - Improve performance by CSS Image Sprites, CDN and file merging
+ - Prepare release notes
+#### Environment: 
+Java, Spring, JavaScript, Linux, Geronimo, Cassandra, Html5, Web 2.0, Ajax, RESTful, JQuery, Ember, RequireJs, Bootstrap, CSS, Eclipse, Junit, Json, Mockjax, Maven, Jenkins, Selenium, Fiddler, perforce, refactoring, Firebug, system integration, Agile, Scrum, JIRA
+
+
 
