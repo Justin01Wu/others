@@ -106,6 +106,10 @@ Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven,
 Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax, JQuery, SOAP, CSS, Mysql, Mysql query analyzer, Eclipse, Hibernate, Junit, Jmeter, JavaScript, Jmock, Ant, Hudson, Selenium, Ant, Restful, XML/SOAP, XSD, XSLT, XmlSpy, Subversion, refactoring, UML, Firebug, MQ, JMS, MDB, system integration, Dependency Injection(DI), Guice, Agile development, Apache, Lucene
 
 
+## Terida System Inc. Toronto (www.terida.com) 2004.12-2008.08
+### Project: Expert for Health 
+#### Role: Senior Java Developer 
+...
 
 
 
