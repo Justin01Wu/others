@@ -13,8 +13,12 @@
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy.
 <img src="aws/Aws_permissionPolicy.png">
+- The root user can customize login url
+<img src="aws/customized_sign-in_Link.png">
+
 
 ## DB
+
 ###DynamoDb
 - DynamoDb use the stream to trigger a lambda function
 <img src="aws/dynamo_stream.png">
@@ -34,6 +38,14 @@ This scenario also helps for operating network appliances, such as firewalls or 
 ## SWF
 - Amazon SWF consists of a number of different types of programmatic features known as actors. Actors can be workflow starters, deciders, or activity workers.
 - These actors communicate with Amazon SWF through its API. You can develop actors in any programming language.
+
+## CloudWatch
+- Application can easily create customized metrics in CloudWatch
+<img src="aws/CloudWatch_customizedMetrics.png">
+
+## Developing
+- aws explorer is an Eclipse plugin 
+<img src="aws/aws explorer.png">
 
 
 
