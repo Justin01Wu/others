@@ -13,7 +13,15 @@
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy. <img src="aws/Aws_permissionPolicy.png">
 - The root user can customize login url <img src="aws/customized_sign-in_Link.png">
+- It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. The higher the privileges, the more problems it can create.
+- The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
+   Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
 
+### With regard to IAM, when a request is made, the AWS service decides whether a given request should be allowed or denied. 
+The evaluation logic follows these rules:
+- By default, all requests are denied. (In general, requests made using the account credentials for resources in the account are always allowed.)
+- An explicit allow policy overrides this default.
+- An explicit deny policy overrides any allows.
 ## DB
 
 ###DynamoDb
@@ -23,6 +31,11 @@
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
 - AWS reserve the right to delete a queue if no activity against the queue for more than 30 consecutive days
+- Amazon SQS is engineered to provide "at least once" delivery of all messages in its queues. Although most of the time, each message will be delivered to your application exactly once, you should design your system so that processing a message more than once does not create any errors or inconsistencies.
+- Amazon SQS makes a best effort to preserve order in messages, but due to the distributed nature of the queue, AWS cannot guarantee that you will receive messages in the exact order you sent them. 
+- You typically place sequencing information or timestamps in your messages so that you can reorder them upon receipt.
+- A message can be stored in the Simple Queue Service (SQS) from 1 minute up to a maximum of 14 days. Thde fault is 4 days.
+- With Amazon SQS version 2008-01-01, the maximum message size for both SOAP and Query requests is 8KB.
 
 ## VPC
 ### Multiple interfaces
