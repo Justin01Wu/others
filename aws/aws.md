@@ -1,5 +1,8 @@
 # AWS Learning
 
+## S3
+- An S3 object ACL is the only way to manage access to objects which are not owned by the bucket owner. 
+  An AWS account that owns the bucket can grant another AWS account permission to upload objects.
 
 ## EC2
 - After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
@@ -31,7 +34,7 @@ The evaluation logic follows these rules:
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
   
-###DynamoDb
+### DynamoDb
 - DynamoDb use the stream to trigger a lambda function<img src="aws/dynamo_stream.png">
 - DynamoDb supports conditional update (first wins for strict banking application ) and atomic counter(last wins)
 
