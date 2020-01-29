@@ -11,11 +11,8 @@
 
 ## Security
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
-- The statement is the main element of the IAM policy and it is a must for a policy.
-<img src="aws/Aws_permissionPolicy.png">
-- The root user can customize login url
-<img src="aws/customized_sign-in_Link.png">
-
+- The statement is the main element of the IAM policy and it is a must for a policy. <img src="aws/Aws_permissionPolicy.png">
+- The root user can customize login url <img src="aws/customized_sign-in_Link.png">
 
 ## DB
 
