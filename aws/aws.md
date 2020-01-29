@@ -32,8 +32,8 @@ The evaluation logic follows these rules:
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
   
 ###DynamoDb
-- DynamoDb use the stream to trigger a lambda function
-<img src="aws/dynamo_stream.png">
+- DynamoDb use the stream to trigger a lambda function<img src="aws/dynamo_stream.png">
+- DynamoDb supports conditional update (first wins for strict banking application ) and atomic counter(last wins)
 
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
@@ -54,6 +54,11 @@ If you need to host multiple websites(with different IPs) on a single EC2 instan
 - Assign separate Security Groups if separate Security Groups are needed
 This scenario also helps for operating network appliances, such as firewalls or load balancers that have multiple private IP addresses for each network interface.
 
+## High Availability
+- The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto Scaling group. 
+  The user can add / remove EC2 instances on the fly. To execute manual scaling, the user should modify the desired capacity. 
+  AutoScaling will adjust instances as per the requirements.
+  
 ### The AWS ELB allows mapping a custom domain name with ELB. The user can map ELB with DNS in two ways:
 - By creating CNAME with the existing domain name service provide
 - OR by creating a record with Route 53
@@ -69,9 +74,12 @@ This scenario also helps for operating network appliances, such as firewalls or 
 - Application can easily create customized metrics in CloudWatch
 <img src="aws/CloudWatch_customizedMetrics.png">
 
+## Infrastructure as Code
+- Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
+
 ## Developing
-- aws explorer is an Eclipse plugin 
-<img src="aws/aws explorer.png">
+- aws explorer is an Eclipse plugin <img src="aws/aws explorer.png">
+- You can set environment variable for acess key <img src="aws/setEnvironment.png">, which override config file
 
 
 
