@@ -13,12 +13,18 @@
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy.
 <img src="aws/Aws_permissionPolicy.png">
+
+## DB
+###DynamoDb
+- DynamoDb use the stream to trigger a lambda function
+<img src="aws/dynamo_stream.png">
+
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
 - AWS reserve the right to delete a queue if no activity against the queue for more than 30 consecutive days
 
 ## VPC
-### multiple interfaces
+### Multiple interfaces
 If you need to host multiple websites(with different IPs) on a single EC2 instance, the following is the suggested method from AWS:
 - Launch a VPC instance with two network interfaces
 - Assign elastic IPs from VPC EIP pool to those interfaces (Because, when the user has attached more than one network interface with an instance, AWS cannot assign public IPs to them)
