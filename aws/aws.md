@@ -2,12 +2,14 @@
 
 
 ## EC2
-- After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. For AWS Linux, the ec2-net-utils package can take care of this step.
+- After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
+  For AWS Linux, the ec2-net-utils package can take care of this step.
 - When a user creates an EBS volume and attaches it as a device, it is required to mount the device.
 
 ### EBS
 - EBS volumes are created in a specific Availability Zone, and can then be attached to any instances in that same Availability Zone.
-- Amazon EBS volumes are designed to be highly available and reliable. At no additional charge to you, Amazon EBS volume data is replicated across multiple servers in an Availability Zone to prevent the loss of data from the failure of any single component. 
+- Amazon EBS volumes are designed to be highly available and reliable. 
+  At no additional charge to you, Amazon EBS volume data is replicated across multiple servers in an Availability Zone to prevent the loss of data from the failure of any single component. 
 
 ## Security
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
@@ -31,7 +33,8 @@ The evaluation logic follows these rules:
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
 - AWS reserve the right to delete a queue if no activity against the queue for more than 30 consecutive days
-- Amazon SQS is engineered to provide "at least once" delivery of all messages in its queues. Although most of the time, each message will be delivered to your application exactly once, you should design your system so that processing a message more than once does not create any errors or inconsistencies.
+- Amazon SQS is engineered to provide "at least once" delivery of all messages in its queues. Although most of the time, each message will be delivered to your application exactly once.
+  You should design your system so that processing a message more than once does not create any errors or inconsistencies.
 - Amazon SQS makes a best effort to preserve order in messages, but due to the distributed nature of the queue, AWS cannot guarantee that you will receive messages in the exact order you sent them. 
 - You typically place sequencing information or timestamps in your messages so that you can reorder them upon receipt.
 - A message can be stored in the Simple Queue Service (SQS) from 1 minute up to a maximum of 14 days. Thde fault is 4 days.
