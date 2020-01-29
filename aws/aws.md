@@ -37,6 +37,8 @@ The evaluation logic follows these rules:
 ### DynamoDb
 - DynamoDb use the stream to trigger a lambda function<img src="aws/dynamo_stream.png">
 - DynamoDb supports conditional update (first wins for strict banking application ) and atomic counter(last wins)
+- DynamoDB uses optimistic concurrency control 
+- DynamoDB uses conditional writes for consistency
 
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
