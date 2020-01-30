@@ -34,6 +34,16 @@ Other regions need region in the URL:
   https://s3-ap-southeast-1.amazonaws.com/justa.cn/CF_nested.png
 ```
 
+### Copy
+In the Copy operation, you set the same object as the source and target. In this way, you can
+- Change existing object metadata
+- Move objects across Amazon S3 locations
+- Rename objects by copying them and then deleting the original ones
+If you choose to update any of the object’s user-configurable metadata:
+- system- 
+- or user-defined
+during the copy, then you must explicitly specify all of the user-configurable
+metadata present on the source object in your request, even if you are changing only one of the metadata values.
 
 ## EC2
 - After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
@@ -41,6 +51,11 @@ Other regions need region in the URL:
 - When a user creates an EBS volume and attaches it as a device, it is required to mount the device.
 - If an EBS volume is attached to a running EC2 instance, the user needs to detach the volume from the original instance and then attach it to a new running instance. 
   The user doesn't need to stop / terminate the original instance.
+  
+### Init log
+You can use AWS console system log menu on EC2 instance to see userData logs, but it will be
+truncated if it is too long, so you can directly ssh to instance and check this file: `/var/log/cloud-init-output.log` 
+
 
 ### EBS
 - EBS volumes are created in a specific Availability Zone, and can then be attached to any instances in that same Availability Zone.
@@ -54,6 +69,22 @@ Other regions need region in the URL:
 - It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. The higher the privileges, the more problems it can create.
 - The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
    Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
+   
+### Role
+You don't need to set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in EC2
+because they usually use role to get permissionI
+You can use this CLI command (automatically installed)to verify your role in targte EC2:
+
+`aws sts get-caller-identity`
+
+```json
+  {
+	"Account": "137200312110",
+	"UserId": "AROAR74OGT4XJA24NUIYS:i-0e387fb768f0e719d",
+	"Arn": 	"arn:aws:sts::137200312110:assumed-role/WebServerRole/i-0e387fb768f0e719d"
+}
+```
+Here ec2 is assigned a role "WebServerRole"
 
 ### With regard to IAM, when a request is made, the AWS service decides whether a given request should be allowed or denied. 
 The evaluation logic follows these rules:
