@@ -62,6 +62,27 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 - Amazon EBS volumes are designed to be highly available and reliable. 
   At no additional charge to you, Amazon EBS volume data is replicated across multiple servers in an Availability Zone to prevent the loss of data from the failure of any single component. 
 
+### Reserved Instance
+A Reserved Instance on AWS is a billing concept and does not apply to a specific Amazon EC2 instance.
+Each hour, the AWS billing system looks at all EC2 instances that have been running in a
+particular AWS account. It then compares them with any Reserved Instances that have been
+purchased. It compares the following attributes:
+- Instance Type (eg m3.large)
+- Operating System (eg Windows)
+- Availability Zone (eg us-west-2)
+For each EC2 instance that matches a Reserved Instance, no cost applies. This is because the
+cost has already been paid as part of the Reserved Instance purchase.
+The Reserved Instance applies regardless of whether the instance was launched through Auto Scaling.
+
+Therefore, if you have purchased one Reserved Instance and your Auto Scaling group launches
+instances that match the Reserved Instance (Type, OS, AZ), then one of the instances in your
+Auto Scaling group will be "free" (or rather, pre-paid) each hour.
+If your Auto Scaling group has a minimum of 1 and a maximum of 4, then there will always be at
+least one EC2 instance running, so you would receive the benefit of the Reserved Instance. Any
+instances above 1 will be charged normally. It is recommended that you use Reserved
+Instances for any instance that will be running continuously.
+From [here] (https://stackoverflow.com/questions/30873849/use-reserved-instance-and-autoscaling-group)
+
 ## Security
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy. <img src="aws/Aws_permissionPolicy.png">
@@ -86,7 +107,8 @@ You can use this CLI command (automatically installed)to verify your role in tar
 ```
 Here ec2 is assigned a role "WebServerRole"
 
-### With regard to IAM, when a request is made, the AWS service decides whether a given request should be allowed or denied. 
+### Policy evaluation
+With regard to IAM, when a request is made, the AWS service decides whether a given request should be allowed or denied. 
 The evaluation logic follows these rules:
 - By default, all requests are denied. (In general, requests made using the account credentials for resources in the account are always allowed.)
 - An explicit allow policy overrides this default.
