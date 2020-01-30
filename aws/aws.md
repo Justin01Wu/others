@@ -70,6 +70,7 @@ purchased. It compares the following attributes:
 - Instance Type (eg m3.large)
 - Operating System (eg Windows)
 - Availability Zone (eg us-west-2)
+
 For each EC2 instance that matches a Reserved Instance, no cost applies. This is because the
 cost has already been paid as part of the Reserved Instance purchase.
 The Reserved Instance applies regardless of whether the instance was launched through Auto Scaling.
@@ -81,7 +82,7 @@ If your Auto Scaling group has a minimum of 1 and a maximum of 4, then there wil
 least one EC2 instance running, so you would receive the benefit of the Reserved Instance. Any
 instances above 1 will be charged normally. It is recommended that you use Reserved
 Instances for any instance that will be running continuously.
-From [here] (https://stackoverflow.com/questions/30873849/use-reserved-instance-and-autoscaling-group)
+From [here](https://stackoverflow.com/questions/30873849/use-reserved-instance-and-autoscaling-group)
 
 ## Security
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
