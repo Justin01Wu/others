@@ -4,6 +4,16 @@
 - An S3 object ACL is the only way to manage access to objects which are not owned by the bucket owner. 
   An AWS account that owns the bucket can grant another AWS account permission to upload objects.
 
+### Bucket name dot issue  
+WildCast SSL certificate can only support one level sub-domain: https://en.wikipedia.org/wiki/Wildcard_certificate
+like *.google.com support www.google.com , but api. www.google.com will fail.
+So when you create a bucket with a dot in it, it will fail because dot will let browse think it has
+two level sub domain : https:// bucket.name .s3.amazon.com/key
+So in this case, you can move bucket into the key name: https://s3.amazon.com/ bucket.name/key
+The second style is called path-style URL, first one is called virtual hosted-style URL
+Usually AWS SDK and console can automatically handle this issue. But you need to switch the
+UTL style if you directly access URL.
+
 ## EC2
 - After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
   For AWS Linux, the ec2-net-utils package can take care of this step.
@@ -81,6 +91,22 @@ This scenario also helps for operating network appliances, such as firewalls or 
 
 ## Infrastructure as Code
 - Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
+
+## Deployment
+
+Deployment Strategies:
+- All-at-once
+- In-place
+- Rolling
+- Rolling with additional batch
+- Blue/Green and Immutable
+
+To deploy a bundle to an ec2 instance, you need :
+- Set ec2 instance with a tag which match key value in the deployment group
+- Install the codeDeploy agent on the ec2 instance(didn’t mention in the official guide)
+- Create an appsecs.yml to include actions for installation and put this file on the top of your zip file
+- Copy this zip file to s3 bucket and set your deployment source to it
+The official guide book missed the agent step
 
 ## Developing
 - aws explorer is an Eclipse plugin <img src="aws/aws explorer.png">
