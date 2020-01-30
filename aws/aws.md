@@ -72,13 +72,14 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 
 ### EFS
 The service is highly scalable, highly available, and highly durable. Amazon EFS stores
-data and metadata across *multiple Availability Zones* in a region, and it can grow to
+data and metadata across **multiple Availability Zones** in a region, and it can grow to
 petabyte scale, drive high levels of throughput, and allow massively parallel access from
 Amazon EC2 instances to your data.
 
 EFS restrictions:
 -  You can mount an Amazon EFS file system on instances in only one VPC at a time.
 -  Both the file system and VPC must be in the same AWS Region.
+
 You can mount your Amazon EFS file systems on your on-premises servers when connected to
 your Amazon VPC with AWS Direct Connect (DX)
 AWS VPN is not supported for accessing an Amazon EFS file system from an on-premises server.
@@ -113,6 +114,11 @@ From [here](https://stackoverflow.com/questions/30873849/use-reserved-instance-a
 - The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
    Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
 - IAM is a free service. You can create as many IAM users or groups as desired free of cost.   
+
+### Identity federating
+IAM can integrate with two different types of outside Identity Providers (IdP):
+- OpenId for federating web identities, like FaceBook...
+- SAML for federating internal identities, Like Active Directory or LDAP
    
 ### Role
 You don't need to set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in EC2
@@ -142,9 +148,54 @@ When a user is trying to create a policy from the AWS console, it will have opti
 - or use a policy generator. 
 - The user can also define a custom policy or chose the option to have no permission.
 
+
+A corporate web application is deployed within an Amazon Virtual Private
+Cloud (VPC) and is connected to the corporate data center via an iPsec VPN.
+The application must authenticate against the on-premises LDAP server. After
+authentication, each logged-in user can only access an Amazon Simple Storage
+Space (S3) keyspace specific to that user. Which two approaches can satisfy
+these objectives? (Choose 2 answers) [PROFESSIONAL]
+
+- Develop an identity broker that authenticates against IAM security
+Token service to assume a IAM role in order to get temporary AWS
+security credentials. The application calls the identity broker to get
+AWS temporary security credentials with access to the appropriate
+S3 bucket. ( **Needs to authenticate against LDAP and not IAM **)
+
+- The application authenticates against LDAP and retrieves
+the name of an IAM role associated with the user. The
+application then calls the IAM Security Token Service to
+assume that IAM role. The application can use the
+temporary credentials to access the appropriate S3 bucket.
+( **Authenticates with LDAP and calls the AssumeRole** )
+
+- Develop an identity broker that authenticates against
+LDAP and then calls IAM Security Token Service to get IAM
+federated user credentials The application calls the identity
+broker to get IAM federated user credentials with access to
+the appropriate S3 bucket. 
+  ( **Custom Identity broker implementation, with authentication with LDAP and using federated token** )
+
+- The application authenticates against LDAP the application then
+calls the AWS identity and Access Management (IAM) Security
+Token service to log in to IAM using the LDAP credentials the
+application can use the IAM temporary credentials to access the
+appropriate S3 bucket. ( **Can’t login to IAM using LDAP credentials** )
+
+- The application authenticates against IAM Security Token Service
+using the LDAP credentials the application uses those temporary
+AWS security credentials to access the appropriate S3 bucket. ( **Need to authenticate with LDAP** )
+
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
+
+Which statements about DynamoDB are true? Choose 2 answers.
+- DynamoDB uses a pessimistic locking model
+- **DynamoDB uses optimistic concurrency control**
+- **DynamoDB uses conditional writes for consistency**
+- DynamoDB restricts item access during reads
+- DynamoDB restricts item access during writes
   
 ### DynamoDb
 - DynamoDb use the stream to trigger a lambda function<img src="aws/dynamo_stream.png">
