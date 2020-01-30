@@ -5,16 +5,29 @@
   An AWS account that owns the bucket can grant another AWS account permission to upload objects.
 
 ### Bucket name dot issue  
-WildCast SSL certificate can only support one level sub-domain: https://en.wikipedia.org/wiki/Wildcard_certificate
+WildCast SSL certificate can only support one level sub-domain: 
+    [Wildcard_certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) 
 
 like *.google.com support www.google.com , but api. www.google.com will fail.
 So when you create a bucket with a dot in it, it will fail because dot will let browse think it has
-two level sub domain : https:// bucket.name .s3.amazon.com/key
-So in this case, you can move bucket into the key name: https://s3.amazon.com/ bucket.name/key
+two level sub domain : 
+```xml
+  https:// bucket.name .s3.amazon.com/key  
+```
+
+So in this case, you can move bucket into the key name: 
+```xml
+  https://s3.amazon.com/ bucket.name/key
+```
 
 The second style is called path-style URL, first one is called virtual hosted-style URL
 Usually AWS SDK and console can automatically handle this issue. But you need to switch the
 UTL style if you directly access URL.
+
+### Region
+Us-east (N. Virginia) is the default S3 region, it doesn’t need region name is the URL: https://s3.amazonaws.com/justa.ca/Ec2WinJoinAD.png
+Other regions need region in the URL:
+https://s3-ap-southeast-1.amazonaws.com/justa.cn/CF_nested.png
 
 ## EC2
 - After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
