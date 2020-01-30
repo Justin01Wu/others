@@ -3,6 +3,10 @@
 ## S3
 - An S3 object ACL is the only way to manage access to objects which are not owned by the bucket owner. 
   An AWS account that owns the bucket can grant another AWS account permission to upload objects.
+- Amazon S3 offers access policy options broadly categorized as resource-based policies and user policies. 
+   Access policies, such as ACL and resource policy can be attached to the bucket. 
+   With the object the user can only have ACL and not an object policy. 
+- The user can also attach access policies to the IAM users in the account. These are called user policies.  
 
 ### Bucket name dot issue  
 WildCast SSL certificate can only support one level sub-domain: 
@@ -61,6 +65,10 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 - EBS volumes are created in a specific Availability Zone, and can then be attached to any instances in that same Availability Zone.
 - Amazon EBS volumes are designed to be highly available and reliable. 
   At no additional charge to you, Amazon EBS volume data is replicated across multiple servers in an Availability Zone to prevent the loss of data from the failure of any single component. 
+- If a user has launched an EBS backed instance, the user will be charged for the EBS volume even though the instance is in a stopped state. 
+  The instance will be charged for the EC2 hourly cost only when it is running.  
+- The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot, is always specific to the region and never specific to a single AZ  
+- When creating an EBS the user cannot specify the subnet or VPC. However, the user must create the EBS in the same AZ as the instance so that it can attach the EBS volume to the running instance.
 
 ### Reserved Instance
 A Reserved Instance on AWS is a billing concept and does not apply to a specific Amazon EC2 instance.
@@ -91,6 +99,7 @@ From [here](https://stackoverflow.com/questions/30873849/use-reserved-instance-a
 - It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. The higher the privileges, the more problems it can create.
 - The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
    Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
+- IAM is a free service. You can create as many IAM users or groups as desired free of cost.   
    
 ### Role
 You don't need to set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in EC2
@@ -114,6 +123,11 @@ The evaluation logic follows these rules:
 - By default, all requests are denied. (In general, requests made using the account credentials for resources in the account are always allowed.)
 - An explicit allow policy overrides this default.
 - An explicit deny policy overrides any allows.
+
+When a user is trying to create a policy from the AWS console, it will have options:
+- create policy from templates 
+- or use a policy generator. 
+- The user can also define a custom policy or chose the option to have no permission.
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
@@ -153,6 +167,10 @@ This scenario also helps for operating network appliances, such as firewalls or 
 - By creating CNAME with the existing domain name service provide
 - OR by creating a record with Route 53
 
+### AutoScaling
+AutoScaling attempts to distribute instances evenly between the Availability Zones that are enabled for the user's AutoScaling group. 
+Auto Scaling does this by attempting to launch new instances in the Availability Zone with the fewest instances.
+
 ## SWF
 - Amazon SWF consists of a number of different types of programmatic features known as actors. Actors can be workflow starters, deciders, or activity workers.
 - These actors communicate with Amazon SWF through its API. You can develop actors in any programming language.
@@ -186,6 +204,10 @@ The official guide book missed the agent step
 ## Developing
 - aws explorer is an Eclipse plugin <img src="aws/aws explorer.png">
 - You can set environment variable for acess key <img src="aws/setEnvironment.png">, which override config file
+
+## Others
+
+- The maximum number of tags per resource is 50( It was 10).
 
 
 
