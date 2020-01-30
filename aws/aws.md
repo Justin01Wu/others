@@ -6,10 +6,12 @@
 
 ### Bucket name dot issue  
 WildCast SSL certificate can only support one level sub-domain: https://en.wikipedia.org/wiki/Wildcard_certificate
+
 like *.google.com support www.google.com , but api. www.google.com will fail.
 So when you create a bucket with a dot in it, it will fail because dot will let browse think it has
 two level sub domain : https:// bucket.name .s3.amazon.com/key
 So in this case, you can move bucket into the key name: https://s3.amazon.com/ bucket.name/key
+
 The second style is called path-style URL, first one is called virtual hosted-style URL
 Usually AWS SDK and console can automatically handle this issue. But you need to switch the
 UTL style if you directly access URL.
