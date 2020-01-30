@@ -70,6 +70,19 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 - The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot, is always specific to the region and never specific to a single AZ  
 - When creating an EBS the user cannot specify the subnet or VPC. However, the user must create the EBS in the same AZ as the instance so that it can attach the EBS volume to the running instance.
 
+### EFS
+The service is highly scalable, highly available, and highly durable. Amazon EFS stores
+data and metadata across *multiple Availability Zones* in a region, and it can grow to
+petabyte scale, drive high levels of throughput, and allow massively parallel access from
+Amazon EC2 instances to your data.
+
+EFS restrictions:
+-  You can mount an Amazon EFS file system on instances in only one VPC at a time.
+-  Both the file system and VPC must be in the same AWS Region.
+You can mount your Amazon EFS file systems on your on-premises servers when connected to
+your Amazon VPC with AWS Direct Connect (DX)
+AWS VPN is not supported for accessing an Amazon EFS file system from an on-premises server.
+
 ### Reserved Instance
 A Reserved Instance on AWS is a billing concept and does not apply to a specific Amazon EC2 instance.
 Each hour, the AWS billing system looks at all EC2 instances that have been running in a
@@ -170,6 +183,13 @@ This scenario also helps for operating network appliances, such as firewalls or 
 ### AutoScaling
 AutoScaling attempts to distribute instances evenly between the Availability Zones that are enabled for the user's AutoScaling group. 
 Auto Scaling does this by attempting to launch new instances in the Availability Zone with the fewest instances.
+
+### Launch Template vs Launch Configuration
+Launch Templates is a new capability(since Nov 2017 ) that enables a new way to templatize
+your launch requests. Launch Templates streamline and simplify the launch process for Auto
+Scaling, Spot Fleet, Spot, and On-Demand instances.
+Launch Templates reduce the number of steps required to create an instance by capturing all
+launch parameters within one resource. This makes the process easy to reproduce
 
 ## SWF
 - Amazon SWF consists of a number of different types of programmatic features known as actors. Actors can be workflow starters, deciders, or activity workers.
