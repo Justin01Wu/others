@@ -154,13 +154,13 @@ Cloud (VPC) and is connected to the corporate data center via an iPsec VPN.
 The application must authenticate against the on-premises LDAP server. After
 authentication, each logged-in user can only access an Amazon Simple Storage
 Space (S3) keyspace specific to that user. Which two approaches can satisfy
-these objectives? (Choose 2 answers) [PROFESSIONAL]
+these objectives? (Choose 2 answers) [PROFESSIONAL]:
 
 - Develop an identity broker that authenticates against IAM security
 Token service to assume a IAM role in order to get temporary AWS
 security credentials. The application calls the identity broker to get
 AWS temporary security credentials with access to the appropriate
-S3 bucket. ( **Needs to authenticate against LDAP and not IAM **)
+S3 bucket. ( **Needs to authenticate against LDAP and not IAM**)
 
 - The application authenticates against LDAP and retrieves
 the name of an IAM role associated with the user. The
@@ -213,6 +213,35 @@ Which statements about DynamoDB are true? Choose 2 answers.
 - A message can be stored in the Simple Queue Service (SQS) from 1 minute up to a maximum of 14 days. Thde fault is 4 days.
 - With Amazon SQS version 2008-01-01, the maximum message size for both SOAP and Query requests is 8KB.
 - By default, SQS queues allow you to send the largest supported payload size, currently 256KB.
+
+### Q: Does Amazon SQS guarantee delivery of messages?
+- Standard queues provide at-least-once delivery, which means that each message is delivered
+at least once.
+- FIFO queues provide exactly-once processing, which means that each message is delivered
+once and remains available until a consumer processes it and deletes it. Duplicates are not
+introduced into the queue.
+
+### SWF
+Which of the following statements about SWF are true? Choose 3 answers.
+- **SWF tasks are assigned once and never duplicated**
+- SWF requires an S3 bucket for workflow storage
+- **SWF workflow executions can last up to a year**
+- SWF triggers SNS notifications on task assignment
+- **SWF uses deciders and workers to complete tasks**
+- SWF requires at least 1 EC2 instance per domain
+
+### Push notification service
+You send push notification messages to both mobile devices and desktops with the following
+push notification services:
+- Amazon Device Messaging (ADM) ( SMS? )
+- Apple Push Notification Service (APNS) for both iOS and macOS
+- Baidu Cloud Push (Baidu)
+- Google Cloud Messaging for Android (GCM)
+- Microsoft Push Notification Service for Windows Phone (MPNS)
+- Windows Push Notification Services (WNS)
+
+<img src="aws/create_subscription.png">
+
 
 ## VPC
 ### Multiple interfaces
