@@ -78,11 +78,11 @@ You can use this CLI command (automatically installed)to verify your role in tar
 `aws sts get-caller-identity`
 
 ```json
-  {
-	"Account": "137200312110",
-	"UserId": "AROAR74OGT4XJA24NUIYS:i-0e387fb768f0e719d",
-	"Arn": 	"arn:aws:sts::137200312110:assumed-role/WebServerRole/i-0e387fb768f0e719d"
-}
+	{
+		"Account": "137200312110",
+		"UserId": "AROAR74OGT4XJA24NUIYS:i-0e387fb768f0e719d",
+		"Arn": 	"arn:aws:sts::137200312110:assumed-role/WebServerRole/i-0e387fb768f0e719d"
+	}
 ```
 Here ec2 is assigned a role "WebServerRole"
 
