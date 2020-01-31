@@ -69,6 +69,7 @@ truncated if it is too long, so you can directly ssh to instance and check this 
   The instance will be charged for the EC2 hourly cost only when it is running.  
 - The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot, is always specific to the region and never specific to a single AZ  
 - When creating an EBS the user cannot specify the subnet or VPC. However, the user must create the EBS in the same AZ as the instance so that it can attach the EBS volume to the running instance.
+- When a user is trying to mount a blank EBS volume, it is required that the user first creates a file system within the volume.
 
 ### EFS
 The service is highly scalable, highly available, and highly durable. Amazon EFS stores
@@ -202,6 +203,7 @@ Which statements about DynamoDB are true? Choose 2 answers.
 - DynamoDb supports conditional update (first wins for strict banking application ) and atomic counter(last wins)
 - DynamoDB uses optimistic concurrency control 
 - DynamoDB uses conditional writes for consistency
+- Currently, in DynamoDB, an index cannot be modified once it is created.
 
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
@@ -257,7 +259,7 @@ This scenario also helps for operating network appliances, such as firewalls or 
   AutoScaling will adjust instances as per the requirements.
   
 ### The AWS ELB allows mapping a custom domain name with ELB. The user can map ELB with DNS in two ways:
-- By creating CNAME with the existing domain name service provide
+- By creating CNAME with the existing domain name service provider
 - OR by creating a record with Route 53
 
 ### AutoScaling
