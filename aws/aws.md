@@ -221,6 +221,8 @@ The monitoring is free of cost.
 - DynamoDB uses optimistic concurrency control 
 - DynamoDB uses conditional writes for consistency
 - Currently, in DynamoDB, an index cannot be modified once it is created.
+- One capacity unit = 1k/s writing and 4k/s reading by default <img src="aws/dynamoCapacity.png">
+
 
 ## Message
 - Queue names are limited to 80 characters. Alphanumeric characters plus hyphens (-) and underscores (_) are allowed. Queue names must be unique within an AWS account
