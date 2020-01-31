@@ -70,6 +70,7 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 - The EBS snapshots are a point in time backup of the EBS volume. It is an incremental snapshot, is always specific to the region and never specific to a single AZ  
 - When creating an EBS the user cannot specify the subnet or VPC. However, the user must create the EBS in the same AZ as the instance so that it can attach the EBS volume to the running instance.
 - When a user is trying to mount a blank EBS volume, it is required that the user first creates a file system within the volume.
+- The user can increase the size of the volume but cannot decrease it less than the original snapshot size.
 
 ### EFS
 The service is highly scalable, highly available, and highly durable. Amazon EFS stores
@@ -111,6 +112,7 @@ From [here](https://stackoverflow.com/questions/30873849/use-reserved-instance-a
 - The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy. <img src="aws/Aws_permissionPolicy.png">
 - The root user can customize login url <img src="aws/customized_sign-in_Link.png">
+- The account alias must be unique across all Amazon Web Services products.
 - It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. The higher the privileges, the more problems it can create.
 - The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
    Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
@@ -197,6 +199,19 @@ Which statements about DynamoDB are true? Choose 2 answers.
 - **DynamoDB uses conditional writes for consistency**
 - DynamoDB restricts item access during reads
 - DynamoDB restricts item access during writes
+
+### DB backups
+- You can set the backup retention period to between 0 and 35 days. 
+- Setting the backup retention period to 0 disables automated backups. 
+- Manual snapshot limits (100 per region) do not apply to automated backups.
+
+### DB Cost
+RDS charges the user on a pay as you go basis. It charges the user based on:
+- the instance type
+- number of hours that the instance is running
+- data transfer
+- storage cost as well for the I/O requests. 
+The monitoring is free of cost.
   
 ### DynamoDb
 - DynamoDb use the stream to trigger a lambda function<img src="aws/dynamo_stream.png">
@@ -213,7 +228,7 @@ Which statements about DynamoDB are true? Choose 2 answers.
 - Amazon SQS makes a best effort to preserve order in messages, but due to the distributed nature of the queue, AWS cannot guarantee that you will receive messages in the exact order you sent them. 
 - You typically place sequencing information or timestamps in your messages so that you can reorder them upon receipt.
 - A message can be stored in the Simple Queue Service (SQS) from 1 minute up to a maximum of 14 days. Thde fault is 4 days.
-- With Amazon SQS version 2008-01-01, the maximum message size for both SOAP and Query requests is 8KB.
+- With Amazon SQS version 2008-01-01, the maximum message size for both SOAP and Query requests is 8KB. (?)
 - By default, SQS queues allow you to send the largest supported payload size, currently 256KB.
 
 ### Q: Does Amazon SQS guarantee delivery of messages?
@@ -223,14 +238,15 @@ at least once.
 once and remains available until a consumer processes it and deletes it. Duplicates are not
 introduced into the queue.
 
-### SWF
-Which of the following statements about SWF are true? Choose 3 answers.
-- **SWF tasks are assigned once and never duplicated**
-- SWF requires an S3 bucket for workflow storage
-- **SWF workflow executions can last up to a year**
-- SWF triggers SNS notifications on task assignment
-- **SWF uses deciders and workers to complete tasks**
-- SWF requires at least 1 EC2 instance per domain
+
+### Amazon SES
+Amazon SES is for applications that need to send arbitrary communications via email. 
+Amazon SES supports custom email header fields, and many MIME types.
+
+By contrast, Amazon SNS is for messaging-oriented applications, 
+with multiple subscribers requesting and receiving "push" notifications of time-critical messages 
+via a choice of transport protocols, including HTTP, Amazon SQS, and email. 
+The body of an Amazon SNS notification is limited to 8192 characters of UTF-8 strings, and is not intended to support multimedia content.
 
 ### Push notification service
 You send push notification messages to both mobile devices and desktops with the following
@@ -244,6 +260,21 @@ push notification services:
 
 <img src="aws/create_subscription.png">
 
+## SWF
+- Amazon SWF consists of a number of different types of programmatic features known as actors. Actors can be workflow starters, deciders, or activity workers.
+- These actors communicate with Amazon SWF through its API. You can develop actors in any programming language.
+- In Amazon Simple Workflow Service (Amazon SWF), an activity worker is a program that receives activity tasks, performs them, and provides results back.
+- At times, you might want to record information in the workflow history of a workflow execution that is specific to your use case. 
+  Markers enable you to record information in the workflow execution history that you can use for any custom or scenario-specific purpose.
+
+Which of the following statements about SWF are true? Choose 3 answers.
+- **SWF tasks are assigned once and never duplicated**
+- SWF requires an S3 bucket for workflow storage
+- **SWF workflow executions can last up to a year**
+- SWF triggers SNS notifications on task assignment
+- **SWF uses deciders and workers to complete tasks**
+- SWF requires at least 1 EC2 instance per domain
+
 
 ## VPC
 ### Multiple interfaces
@@ -253,6 +284,8 @@ If you need to host multiple websites(with different IPs) on a single EC2 instan
 - Assign separate Security Groups if separate Security Groups are needed
 This scenario also helps for operating network appliances, such as firewalls or load balancers that have multiple private IP addresses for each network interface.
 
+Every subnet in your VPC must be associated with exactly one Route Table. However, multiple subnets can be associated with the same Route Table.
+
 ## High Availability
 - The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto Scaling group. 
   The user can add / remove EC2 instances on the fly. To execute manual scaling, the user should modify the desired capacity. 
@@ -261,6 +294,12 @@ This scenario also helps for operating network appliances, such as firewalls or 
 ### The AWS ELB allows mapping a custom domain name with ELB. The user can map ELB with DNS in two ways:
 - By creating CNAME with the existing domain name service provider
 - OR by creating a record with Route 53
+
+### Sticky sessions
+The key to managing sticky sessions is to determine how long your load balancer should consistently route the user's request to the same instance. 
+If your application has its own session cookie, then you can configure Elastic Load Balancing so that 
+the session cookie follows the duration specified by the application's session cookie. If your application does not have its own session cookie, 
+then you can configure Elastic Load Balancing to create a session cookie by specifying your own stickiness duration.
 
 ### AutoScaling
 AutoScaling attempts to distribute instances evenly between the Availability Zones that are enabled for the user's AutoScaling group. 
@@ -273,19 +312,15 @@ Scaling, Spot Fleet, Spot, and On-Demand instances.
 Launch Templates reduce the number of steps required to create an instance by capturing all
 launch parameters within one resource. This makes the process easy to reproduce
 
-## SWF
-- Amazon SWF consists of a number of different types of programmatic features known as actors. Actors can be workflow starters, deciders, or activity workers.
-- These actors communicate with Amazon SWF through its API. You can develop actors in any programming language.
-- In Amazon Simple Workflow Service (Amazon SWF), an activity worker is a program that receives activity tasks, performs them, and provides results back.
-- At times, you might want to record information in the workflow history of a workflow execution that is specific to your use case. 
-  Markers enable you to record information in the workflow execution history that you can use for any custom or scenario-specific purpose.
-
 ## CloudWatch
 - Application can easily create customized metrics in CloudWatch
 <img src="aws/CloudWatch_customizedMetrics.png">
 
 ## Infrastructure as Code
 - Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
+- CloudFormation allows you to create Microsoft Windows stacks based on Amazon EC2 Windows Amazon Machine Images (AMIs) 
+  and provides you with the ability to install software, 
+  to use remote desktop to access your stack, and to update and configure your stack.
 
 ## Deployment
 
