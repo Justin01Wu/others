@@ -109,11 +109,13 @@ Instances for any instance that will be running continuously.
 From [here](https://stackoverflow.com/questions/30873849/use-reserved-instance-and-autoscaling-group)
 
 ## Security
-- The IAM users by default cannot change their password. The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
+- The IAM users by default cannot change their password. 
+  The root owner or IAM administrator needs to set the policy in the password policy page, which should allow the user to change their password.
 - The statement is the main element of the IAM policy and it is a must for a policy. <img src="aws/Aws_permissionPolicy.png">
 - The root user can customize login url <img src="aws/customized_sign-in_Link.png">
 - The account alias must be unique across all Amazon Web Services products.
-- It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. The higher the privileges, the more problems it can create.
+- It is a recommended rule that the root user should grant the least privileges to the IAM user or the group. 
+  The higher the privileges, the more problems it can create.
 - The only recommended use case for the bucket ACL is to grant write permission to the Amazon S3 Log Delivery group to write access log objects to your bucket.
    Please see [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-alternatives-guidelines.html)
 - IAM is a free service. You can create as many IAM users or groups as desired free of cost.   
@@ -194,11 +196,11 @@ AWS security credentials to access the appropriate S3 bucket. ( **Need to authen
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
 
 Which statements about DynamoDB are true? Choose 2 answers.
-- DynamoDB uses a pessimistic locking model
+- ~~DynamoDB uses a pessimistic locking model~~
 - **DynamoDB uses optimistic concurrency control**
 - **DynamoDB uses conditional writes for consistency**
-- DynamoDB restricts item access during reads
-- DynamoDB restricts item access during writes
+- ~~DynamoDB restricts item access during reads~~
+- ~~DynamoDB restricts item access during writes~~
 
 ### DB backups
 - You can set the backup retention period to between 0 and 35 days. 
@@ -269,11 +271,11 @@ push notification services:
 
 Which of the following statements about SWF are true? Choose 3 answers.
 - **SWF tasks are assigned once and never duplicated**
-- SWF requires an S3 bucket for workflow storage
+- ~~SWF requires an S3 bucket for workflow storage~~
 - **SWF workflow executions can last up to a year**
-- SWF triggers SNS notifications on task assignment
+- ~~SWF triggers SNS notifications on task assignment~~
 - **SWF uses deciders and workers to complete tasks**
-- SWF requires at least 1 EC2 instance per domain
+- ~~SWF requires at least 1 EC2 instance per domain~~
 
 
 ## VPC
