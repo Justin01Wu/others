@@ -327,6 +327,8 @@ launch parameters within one resource. This makes the process easy to reproduce
 ## CloudWatch
 - Application can easily create customized metrics in CloudWatch
 <img src="aws/CloudWatch_customizedMetrics.png">
+- CloudWatch uses SNS to notify users when an alarm is triggered: 
+<img src="aws/CloudWatch_alarmNotification.png">
 
 ## Infrastructure as Code
 - Maximum number of AWS CloudFormation stacks that you can create is 20 stacks.
@@ -348,7 +350,11 @@ To deploy a bundle to an ec2 instance, you need :
 - Install the codeDeploy agent on the ec2 instance(didn’t mention in the official guide)
 - Create an appsecs.yml to include actions for installation and put this file on the top of your zip file
 - Copy this zip file to s3 bucket and set your deployment source to it
-The official guide book missed the agent step
+The official guide book missed the agent step.
+<img src="aws/codeDeploy_ec2.png">
+
+the arichive code deploy:
+<img src="aws/CodeDeploy_archive.png">
 
 ## Developing
 - aws explorer is an Eclipse plugin <img src="aws/aws explorer.png">
