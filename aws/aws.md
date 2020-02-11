@@ -71,6 +71,8 @@ truncated if it is too long, so you can directly ssh to instance and check this 
 - When creating an EBS the user cannot specify the subnet or VPC. However, the user must create the EBS in the same AZ as the instance so that it can attach the EBS volume to the running instance.
 - When a user is trying to mount a blank EBS volume, it is required that the user first creates a file system within the volume.
 - The user can increase the size of the volume but cannot decrease it less than the original snapshot size.
+- EBS will accumlate unused capacity for burst <img src="aws/EBS_BurstBalance.png">
+
 
 ### EFS
 The service is highly scalable, highly available, and highly durable. Amazon EFS stores
@@ -335,6 +337,9 @@ launch parameters within one resource. This makes the process easy to reproduce
 - CloudFormation allows you to create Microsoft Windows stacks based on Amazon EC2 Windows Amazon Machine Images (AMIs) 
   and provides you with the ability to install software, 
   to use remote desktop to access your stack, and to update and configure your stack.
+- CloudFormation allow external stack for large statcks: <img src="aws/CF_nested.png">
+- CloudFormation provide  drag and drop designer: <img src="aws/CloudFormation_designer.png">
+
 
 ## Deployment
 
