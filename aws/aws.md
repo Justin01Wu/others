@@ -191,6 +191,14 @@ appropriate S3 bucket. ( **Can’t login to IAM using LDAP credentials** )
 using the LDAP credentials the application uses those temporary
 AWS security credentials to access the appropriate S3 bucket. ( **Need to authenticate with LDAP** )
 
+## Lambda
+AWS will automatically prepare running environment for a Lambda function. 
+It will cost more time to start if a lambda is not used for a while. Usuauly we called this cold start.
+init time is not counted as bill time.
+
+You can see below picture for environment details which is got from a lambda function: 
+<img src="aws/lambda_env.png">
+
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
