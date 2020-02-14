@@ -1,5 +1,5 @@
 # Justin Wu
-L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780
+L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780  •  Skype: wuyg719
 
 http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Solution Architect / Sr Java developer/Full stack Developer
