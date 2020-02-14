@@ -1,5 +1,5 @@
 # Justin Wu
-L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780
+L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780  •  Skype: wuyg719
 
 http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Solution Architect / Sr Java developer/Full stack Developer
@@ -8,7 +8,7 @@ http://www.linkedin.com/in/justin01wu
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
 - Have the highest production rate on code, document, tickets with the best quality in the team
 - Excellent ability on API design
-- AWS Certified Solution Architect -Associate
+- AWS Certified Developer and Solution Architect -Associate
 - Strong experience on frameworks evaluation and dependency controlling
 - Automation and cost expert on SLDC
 - Introduced 0 bug into PROD in 2019 from my code
@@ -41,7 +41,8 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Achieve user friendly UI in the low cost
 - Integrate with SICS,  KeyCloak, Active Directory, API gateway, and Exchange server
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
-- Improve software quality a lot by introducing integration testing in low cost, testability design, modularity design,  encapsulation, dependency management
+- Improve software quality a lot by introducing integration testing in low cost, testability design, 
+  modularity design,  encapsulation, dependency management. Designed 90% integration test cases
 - Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
 - Improve security by introduce Kerberos SSO and SSL
 #### Environment: 
@@ -122,6 +123,11 @@ Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax
 - 2006 Sun Certified Web Component Developer(SCWCD)
 - 2005  Sun Certified Java 2 Developer(SCJP)
 - 2000 Microsoft Certified Professional Systems Engineer(MCSE)
+
+# Education
+1994-1997 Master on Mining system, GuiZhou University, China
+1990-1994 Bachelor on  Mining Machine, GuiZhou University, China
+
 
 
 
