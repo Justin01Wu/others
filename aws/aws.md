@@ -12,7 +12,8 @@
 WildCast SSL certificate can only support one level sub-domain: 
     [Wildcard_certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) 
 
-like *.google.com support www.google.com , but api.www.google.com will fail.
+like *.google.com support www.google.com, but api.www.google.com will fail.
+
 So when you create a bucket with a dot in it, it will fail because dot will let browse think it has
 two level sub domain : `https://bucket.name.s3.amazon.com/key`
 
