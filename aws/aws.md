@@ -386,10 +386,9 @@ launch parameters within one resource. This makes the process easy to reproduce
     arn:partition:service:region:account-id:resource-type:resource-id    
     arn:partition:service:region:account-id:resource-type/resource-id  
 	
-For example:  
-    arn:aws:rds:*:123456789012:db:test*
-    here first star means all regions,
-    last * means all db instance start with "test"
+For example:  `arn:aws:rds:*:123456789012:db:test*`
+- here first star means all regions,
+- last * means all db instance start with "test"
     
  Every kind of service defined its own resource-type, you can find them from :
       https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrds.html#amazonrds-resources-for-iam-policies
@@ -399,6 +398,7 @@ AWS Step Functions is a ***fully*** managed service that makes it easy to coordi
 distributed applications and microservices using visual workflows. Instead of writing a Decider program, 
 you define state machines in JSON. AWS customers should consider using Step Functions for new applications. 
 If Step Functions does not fit your needs, then you should consider Amazon Simple Workflow (SWF). 
+
 Amazon SWF provides you ***complete control*** over your orchestration logic, 
 but increases the ***complexity*** of developing applications. 
 You may write decider programs in the programming language of your choice, 
