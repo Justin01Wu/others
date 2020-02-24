@@ -37,8 +37,8 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Have the highest production rate on coding, document, tickets with the best quality in the team
 - Coordinated 5 developers on the new cession workflow to meet tough deadline,which finished about 200 developer tickets in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
-- Conduct most of technical framework switching and upgrading in the VCAPS: log4j, Jersey, Angularjs, Maven, Spnego SSO, web component and etc.
-- Achieve user friendly UI in the low cost
+- Conduct most of technical framework switching and upgrading in the VCAPS: log4j, Jersey, Maven, Spnego SSO and etc.
+- Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, API gateway, and Exchange server
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
@@ -121,8 +121,8 @@ Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax
 - 2020 AWS Certified Developer -Associate  (Amazon)
 - 2019 AWS Certified Solution Architect -Associate  (Amazon)
 - 2018 Professional Scrum Master I  (Scrum.org)
-- 2006 Sun Certified Web Component Developer(SCWCD)
-- 2005  Sun Certified Java 2 Developer(SCJP)
+- 2006 [Sun Certified Web Component Developer(SCWCD)] (./SCWCD.jpg) 
+- [2005 Sun Certified Java 2 Developer(SCJP)](./SCJP.jpg) 
 - 2000 Microsoft Certified Professional Systems Engineer(MCSE)
 
 # Education
