@@ -335,9 +335,11 @@ This scenario also helps for operating network appliances, such as firewalls or 
 Every subnet in your VPC must be associated with exactly one Route Table. However, multiple subnets can be associated with the same Route Table.
 
 ### questions:
-- how can AWS determine target when an Internet address conflict with a VPC inner address?
+How can AWS determine target when an Internet address conflict with a VPC inner address?
+
     Internet reserved some IP range for special usage like private subnet:
     https://en.wikipedia.org/wiki/Reserved_IP_addresses
+	
     So you won't get conflict if you follow the above reserved rules.
 
 
