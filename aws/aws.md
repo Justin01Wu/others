@@ -20,6 +20,7 @@ two level sub domain : `https://bucket.name.s3.amazon.com/key`
 So in this case, you can move bucket into the key name: `https://s3.amazon.com/bucket.name/key`
 
 The second style is called path-style URL, first one is called virtual hosted-style URL
+
 Usually AWS SDK and console can automatically handle this issue. But you need to switch the
 URL style if you directly access it.
 
@@ -454,6 +455,7 @@ To deploy a bundle to an ec2 instance, you need :
 - Install the codeDeploy agent on the ec2 instance(didn’t mention in the official guide)
 - Create an appsecs.yml to include actions for installation and put this file on the top of your zip file
 - Copy this zip file to s3 bucket and set your deployment source to it
+
 The official guide book missed the agent step.
 <img src="aws/codeDeploy_ec2.png">
 
