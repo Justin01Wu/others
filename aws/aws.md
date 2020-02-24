@@ -37,11 +37,12 @@ In the Copy operation, you set the same object as the source and target. In this
 - Change existing object metadata
 - Move objects across Amazon S3 locations
 - Rename objects by copying them and then deleting the original ones
-If you choose to update any of the object’s user-configurable metadata:
-- system- 
-- or user-defined
-during the copy, then you must explicitly specify all of the user-configurable
-metadata present on the source object in your request, even if you are changing only one of the metadata values.
+
+If you choose to update any of the object’s user-configurable metadata: system or user-defined
+
+during the copy, then you must ***explicitly*** specify all of the user-configurable
+metadata present on the source object in your request, even if you are ***changing only one*** 
+of the metadata values.
 
 ## EC2
 - After the user has assigned a secondary private IP address to his instance, he needs to configure the operating system on that instance to recognize the secondary private IP address. 
@@ -84,7 +85,7 @@ your Amazon VPC with AWS Direct Connect (DX)
 AWS VPN is not supported for accessing an Amazon EFS file system from an on-premises server.
 
 ### Reserved Instance
-A Reserved Instance on AWS is a billing concept and does not apply to a specific Amazon EC2 instance.
+A Reserved Instance on AWS is a ***billing concept*** and does not apply to a specific Amazon EC2 instance.
 Each hour, the AWS billing system looks at all EC2 instances that have been running in a
 particular AWS account. It then compares them with any Reserved Instances that have been
 purchased. It compares the following attributes:
@@ -367,6 +368,7 @@ Auto Scaling does this by attempting to launch new instances in the Availability
 Launch Templates is a new capability(since Nov 2017 ) that enables a new way to templatize
 your launch requests. Launch Templates streamline and simplify the launch process for Auto
 Scaling, Spot Fleet, Spot, and On-Demand instances.
+
 Launch Templates reduce the number of steps required to create an instance by capturing all
 launch parameters within one resource. This makes the process easy to reproduce
 
