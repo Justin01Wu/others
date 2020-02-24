@@ -219,8 +219,8 @@ You can see below picture for environment details which is got from a lambda fun
 - Can’t accurately control your hardware, it is hard for some types of work, like I can’t get GPU enhanced machine for my dedicated GPU heavy tasks 
 
 ### Lambda Best practices
-https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
-https://blog.newrelic.com/engineering/best-practices-aws-lambda/
+- https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
+- https://blog.newrelic.com/engineering/best-practices-aws-lambda/
 
 
 
