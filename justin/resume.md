@@ -118,11 +118,11 @@ Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax
 ...
 
 # CERTIFICATION
-- 2020 AWS Certified Developer -Associate  (Amazon)
-- 2019 AWS Certified Solution Architect -Associate  (Amazon)
+- [2020 AWS Certified Developer -Associate  (Amazon)](./img/AWS Certified Developer - Associate.png)
+- [2019 AWS Certified Solution Architect -Associate  (Amazon)](./img/AWS Certified Solutions Architect - Associate.png)
 - 2018 Professional Scrum Master I  (Scrum.org)
-- [2006 Sun Certified Web Component Developer(SCWCD)](./SCWCD.jpg) 
-- [2005 Sun Certified Java 2 Developer(SCJP)](./SCJP.jpg) 
+- [2006 Sun Certified Web Component Developer(SCWCD)](./img/SCWCD.jpg) 
+- [2005 Sun Certified Java 2 Developer(SCJP)](./img/SCJP.jpg) 
 - 2000 Microsoft Certified Professional Systems Engineer(MCSE)
 
 # Education
