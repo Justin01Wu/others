@@ -80,6 +80,7 @@ EFS restrictions:
 
 You can mount your Amazon EFS file systems on your on-premises servers when connected to
 your Amazon VPC with AWS Direct Connect (DX)
+
 AWS VPN is not supported for accessing an Amazon EFS file system from an on-premises server.
 
 ### Reserved Instance
@@ -280,9 +281,9 @@ You can also use an application to handle it.
 - By default, SQS queues allow you to send the largest supported payload size, currently 256KB.
 
 ### Q: Does Amazon SQS guarantee delivery of messages?
-- Standard queues provide at-least-once delivery, which means that each message is delivered
+- Standard queues provide ***at-least-once*** delivery, which means that each message is delivered
 at least once.
-- FIFO queues provide exactly-once processing, which means that each message is delivered
+- ***FIFO*** queues provide ***exactly-once*** processing, which means that each message is delivered
 once and remains available until a consumer processes it and deletes it. Duplicates are not
 introduced into the queue.
 
