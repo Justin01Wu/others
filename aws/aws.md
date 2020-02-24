@@ -12,21 +12,15 @@
 WildCast SSL certificate can only support one level sub-domain: 
     [Wildcard_certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) 
 
-like *.google.com support www.google.com , but api. www.google.com will fail.
+like *.google.com support www.google.com , but api.www.google.com will fail.
 So when you create a bucket with a dot in it, it will fail because dot will let browse think it has
-two level sub domain : 
-```xml
-  https://bucket.name.s3.amazon.com/key  
-```
+two level sub domain : `https://bucket.name.s3.amazon.com/key`
 
-So in this case, you can move bucket into the key name: 
-```xml
-  https://s3.amazon.com/bucket.name/key
-```
+So in this case, you can move bucket into the key name: `https://s3.amazon.com/bucket.name/key`
 
 The second style is called path-style URL, first one is called virtual hosted-style URL
 Usually AWS SDK and console can automatically handle this issue. But you need to switch the
-UTL style if you directly access URL.
+URL style if you directly access it.
 
 ### Region
 Us-east (N. Virginia) is the default S3 region, it doesn’t need region name is the URL: 
@@ -201,16 +195,40 @@ init time is not counted as bill time.
 You can see below picture for environment details which is got from a lambda function: 
 <img src="aws/lambda_env.png">
 
+### Why Lambda
+- We don’t need to manage the running environment, save time and money
+- Can easily scale up, it can run 1000 concurrent functions
+- Pay as you used
+- Can be triggered by many AWS sources, like S3 event, SQS, CloudWatch,dynamoDB
+- Can directly be called by API gateway, which is key point for serverless application
+- Can easily be called by applications
+- Can use multiple languages
+
+### Drawbacks:
+- Fully coupled with AWS: you can’t work with Azure functions 
+- Only support some languages or some language versions
+- Have to use AWS cloud watch to log, can’t use third party logger because you can’t access log file
+- Some ports are blocked, like SMTP port
+- No way to debug, AWS SAM CLI(beta) helps but need complicated installation (docker…)
+- Big function is split into small functions and scatter to many places, hard to manage them: upgrading, versioning, trouble shooting…
+- Hard to share code
+- Cost is higher than an EC2 if you constantly run some functions, only good for spike or long periodically function ( like monthly report or occasionally upload a file)
+- Can’t use config file, have to use environment variable, which may expose the DB password to the people(encryption helper can reduce it), can set a config file on S3 bucket, please also see  https://www.concurrencylabs.com/blog/configure-your-lambda-function-like-a-champ-sail-smoothly/
+- There is no good way to declare a lambda or a version is deprecated, version and alias can help
+- Maximum 15 minutes and 3Gb for Java, sometimes it is not enough, have to split a whole function into pieces, make it hard. context.getRemainingTimeInMillis helps
+- Can’t accurately control your hardware, it is hard for some types of work, like I can’t get GPU enhanced machine for my dedicated GPU heavy tasks 
+
+### Lambda Best practices
+https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
+https://blog.newrelic.com/engineering/best-practices-aws-lambda/
+
+
+
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
 
-Which statements about DynamoDB are true? Choose 2 answers.
-- ~~DynamoDB uses a pessimistic locking model~~
-- **DynamoDB uses optimistic concurrency control**
-- **DynamoDB uses conditional writes for consistency**
-- ~~DynamoDB restricts item access during reads~~
-- ~~DynamoDB restricts item access during writes~~
+
 
 ### DB backups
 - You can set the backup retention period to between 0 and 35 days. 
@@ -232,6 +250,22 @@ The monitoring is free of cost.
 - DynamoDB uses conditional writes for consistency
 - Currently, in DynamoDB, an index cannot be modified once it is created.
 - One capacity unit = 1k/s writing and 4k/s reading by default <img src="aws/dynamoCapacity.png">
+
+Which statements about DynamoDB are true? Choose 2 answers.
+- ~~DynamoDB uses a pessimistic locking model~~
+- **DynamoDB uses optimistic concurrency control**
+- **DynamoDB uses conditional writes for consistency**
+- ~~DynamoDB restricts item access during reads~~
+- ~~DynamoDB restricts item access during writes~~
+
+Each key value in the primary key must be unique, but the key values in a global secondary 
+index do ***not*** need to be unique
+
+Aws will do hash on key value. 
+So incremental PK still has good scalar  for the key and won’t cause hot spot.
+
+DynamoDB Streams looks like Kinesis, DynamoDB use this to trigger a lambda function.
+You can also use an application to handle it.
 
 
 ## Message
@@ -300,6 +334,13 @@ This scenario also helps for operating network appliances, such as firewalls or 
 
 Every subnet in your VPC must be associated with exactly one Route Table. However, multiple subnets can be associated with the same Route Table.
 
+### questions:
+- how can AWS determine target when an Internet address conflict with a VPC inner address?
+    Internet reserved some IP range for special usage like private subnet:
+    https://en.wikipedia.org/wiki/Reserved_IP_addresses
+    So you won't get conflict if you follow the above reserved rules.
+
+
 ## High Availability
 - The Manual Scaling as part of Auto Scaling allows the user to change the capacity of Auto Scaling group. 
   The user can add / remove EC2 instances on the fly. To execute manual scaling, the user should modify the desired capacity. 
@@ -340,6 +381,58 @@ launch parameters within one resource. This makes the process easy to reproduce
 - CloudFormation allow external stack for large statcks: <img src="aws/CF_nested.png">
 - CloudFormation provide  drag and drop designer: <img src="aws/CloudFormation_designer.png">
 
+## ARN format:
+
+    arn:partition:service:region:account-id:resource-type:resource-id    
+    arn:partition:service:region:account-id:resource-type/resource-id  
+	
+For example:  
+    arn:aws:rds:*:123456789012:db:test*
+    here first star means all regions,
+    last * means all db instance start with "test"
+    
+ Every kind of service defined its own resource-type, you can find them from :
+      https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrds.html#amazonrds-resources-for-iam-policies
+
+## Step Function Vs SWF
+AWS Step Functions is a ***fully*** managed service that makes it easy to coordinate the components of 
+distributed applications and microservices using visual workflows. Instead of writing a Decider program, 
+you define state machines in JSON. AWS customers should consider using Step Functions for new applications. 
+If Step Functions does not fit your needs, then you should consider Amazon Simple Workflow (SWF). 
+Amazon SWF provides you ***complete control*** over your orchestration logic, 
+but increases the ***complexity*** of developing applications. 
+You may write decider programs in the programming language of your choice, 
+or you may use the Flow framework to use programming constructs that structure 
+asynchronous interactions for you. AWS will continue to provide the Amazon SWF service, 
+Flow framework, and support all Amazon SWF customers.
+
+## Kinesis data stream
+What happens if the capacity limits of an Amazon Kinesis data stream are exceeded 
+while the data producer adds data to the data stream?
+
+The capacity limits of an Amazon Kinesis data stream are defined by the number 
+of shards within the data stream. The limits can be exceeded by either data throughput 
+or the number of PUT records. While the capacity limits are exceeded, 
+the put data call will be ***rejected*** with a ***ProvisionedThroughputExceeded*** exception. 
+If this is due to a temporary rise of the data stream’s input data rate, 
+***retry*** by the data producer will eventually lead to completion of the requests. 
+If this is due to a sustained rise of the data stream’s input data rate, 
+you should increase the number of shards within your data stream to provide 
+enough capacity for the put data calls to consistently succeed. 
+In both cases, Amazon CloudWatch metrics allow you to learn about 
+the change of the data stream’s input data rate and the occurrence of 
+ProvisionedThroughputExceeded exceptions.
+
+Kinesis Streams supports massive producer but limited consumer, it seems the reverse of SNS
+in some degree, Kinesis is similar as Kafka: 
+- The application side remember the process position
+- The server side won’t delete records until it is expired
+- They all have shards/partitions to handle high throughput
+
+Amazon Kinesis Data Firehose is easier to use than Amazon Kinesis Data Streams, as
+it does not require you to write a consumer application.
+
+
 
 ## Deployment
 
@@ -368,6 +461,8 @@ the arichive code deploy:
 ## Others
 
 - The maximum number of tags per resource is 50( It was 10).
+- register linux academy  ?
+
 
 
 
