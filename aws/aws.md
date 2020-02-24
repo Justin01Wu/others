@@ -300,11 +300,11 @@ The body of an Amazon SNS notification is limited to 8192 characters of UTF-8 st
 You send push notification messages to both mobile devices and desktops with the following
 push notification services:
 - Amazon Device Messaging (ADM) ( SMS? )
-- Apple Push Notification Service (APNS) for both iOS and macOS
+- Apple Push Notification Service (APNS) for both ***IOS*** and macOS
 - Baidu Cloud Push (Baidu)
-- Google Cloud Messaging for Android (GCM)
-- Microsoft Push Notification Service for Windows Phone (MPNS)
-- Windows Push Notification Services (WNS)
+- Google Cloud Messaging for ***Android*** (GCM)
+- Microsoft Push Notification Service for ***Windows Phone*** (MPNS)
+- ***Windows*** Push Notification Services (WNS)
 
 <img src="aws/create_subscription.png">
 
