@@ -246,6 +246,7 @@ You can see below picture for environment details which is got from a lambda fun
 + The final url will be  https://bod76cqgu4.execute-api.us-east-1.amazonaws.com/default/api/v1/getMyname
     + here "default" is stage name, you can use "QA", "DEV", "Prod"
 + To use your own domain, you can use route53 to point to your gateway endpoint
++ To support your customized domain SSL certificate, you can see [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
