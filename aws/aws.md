@@ -232,6 +232,13 @@ You can see below picture for environment details which is got from a lambda fun
 + It will automatically use Jackson to convert Json to Java Object for output 
 + Jackson annotations works on the Java Object, like @JsonIgnore
     + But it sets DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES to false, so it will ignore extra fields to handle multiple version
+	```java
+		public final class LambdaInvokerFactory {
+
+		static final ObjectMapper DEFAULT_MAPPER = new ObjectMapper()
+			.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+			.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
+	```
 + Please see GeneralFunctionService in JavaFrame project for details
 
 ## DB
