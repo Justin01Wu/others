@@ -231,7 +231,7 @@ You can see below picture for environment details which is got from a lambda fun
 + It will automatically use Jackson to convert Java Object to Json for input 
 + It will automatically use Jackson to convert Json to Java Object for output 
 + Jackson annotations works on the Java Object, like @JsonIgnore
-    + But it sets DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES to false, so it will ignore extra fields to handle multiple version
+    + But it sets DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES to false, so it will ignore extra fields to handle multiple version:
 	```java
 		public final class LambdaInvokerFactory {
 
@@ -240,6 +240,10 @@ You can see below picture for environment details which is got from a lambda fun
 			.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 	```
 + Please see GeneralFunctionService in JavaFrame project for details
+
+## API Gateway
++ API Gateway resources can define multiple leyers to simulate a API path:  
+<img src="aws/apiGateway_multipleLayer.png">
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
