@@ -12,6 +12,8 @@ rem   and write the CSR to the file justa999_wildCard_self_signed.csr
 rem To examine your CSR, use the following command (prints subject, public key and requested extensions, if present):
 openssl req -in justa999_wildCard_self_signed.csr -noout -text -nameopt sep_multiline
 
+rem print private key, need to input password
+openssl rsa -in justa999_wildCard_self_signed.key -check
 
 rem creating the self-signed certificate
 rem from https://serversforhackers.com/c/self-signed-ssl-certificates

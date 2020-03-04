@@ -248,6 +248,10 @@ You can see below picture for environment details which is got from a lambda fun
 + To use your own domain, you can use route53 to point to your gateway endpoint
 + To support your customized domain SSL certificate, you can see [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)
 
+
+<img src="aws/ssl_import_certificate.png">
+<img src="aws/ssl_imported.png">
+
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
   A brief I/O freeze, typically lasting a few seconds, occurs during both automated backups and DB snapshot operations on Single-AZ DB instances.
