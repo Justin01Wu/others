@@ -226,7 +226,13 @@ You can see below picture for environment details which is got from a lambda fun
 - https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
 - https://blog.newrelic.com/engineering/best-practices-aws-lambda/
 
-
+###  @LambdaFunction details
++ in Java, you can define a interface on Lambda with @LambdaFunction annotation
++ It will automatically use Jackson to convert Java Object to Json for input 
++ It will automatically use Jackson to convert Json to Java Object for output 
++ Jackson annotations works on the Java Object, like @JsonIgnore
+    + But it sets DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES to false, so it will ignore extra fields to handle multiple version
++ Please see GeneralFunctionService in JavaFrame project for details
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
