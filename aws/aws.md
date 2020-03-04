@@ -242,9 +242,10 @@ You can see below picture for environment details which is got from a lambda fun
 + Please see GeneralFunctionService in JavaFrame project for details
 
 ## API Gateway
-+ API Gateway resources can define multiple leyers to simulate a API path:  
-<img src="aws/apiGateway_multipleLayer.png">
-+ the final url will be  https://bod76cqgu4.execute-api.us-east-1.amazonaws.com/default/api/v1/getMyname
++ API Gateway resources can define multiple leyers to simulate a API path:  <img src="aws/apiGateway_multipleLayer.png">
++ The final url will be  https://bod76cqgu4.execute-api.us-east-1.amazonaws.com/default/api/v1/getMyname
+    + here "default" is stage name, you can use "QA", "DEV", "Prod"
++ To use your own domain, you can use route53 to point to your gateway endpoint
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
