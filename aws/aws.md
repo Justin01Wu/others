@@ -244,6 +244,7 @@ You can see below picture for environment details which is got from a lambda fun
 ## API Gateway
 + API Gateway resources can define multiple leyers to simulate a API path:  
 <img src="aws/apiGateway_multipleLayer.png">
++ the final url will be  https://bod76cqgu4.execute-api.us-east-1.amazonaws.com/default/api/v1/getMyname
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
