@@ -247,10 +247,14 @@ You can see below picture for environment details which is got from a lambda fun
     + here "default" is stage name, you can use "QA", "DEV", "Prod"
 + To use your own domain, you can use route53 to point to your gateway endpoint
 + To support your customized domain SSL certificate, you can see [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)
+    + step 1: improt your certificate: <img src="aws/ssl_import_certificate.png">
+	+ step 2: imported certificate: <img src="aws/ssl_imported.png">
+	+ step 3: create custom domain name: <img src="aws/custom_domain_name.png">
+	+ step 4: set alias in route53: <img src="aws/route53ToTargetDomainName.png">
+	+ step 5: result: <img src="aws/custom_domain_name_result.png">
+	+ final url is https://api.justa999.com/name/default/api/v1/getMyname
 
-
-<img src="aws/ssl_import_certificate.png">
-<img src="aws/ssl_imported.png">
+By the way, the original API url is still available after those process
 
 ## DB
 - Amazon RDS provides two different methods for backing up and restoring the Amazon DB instances. 
