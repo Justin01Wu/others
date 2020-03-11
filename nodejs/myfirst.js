@@ -5,6 +5,8 @@ var dt = require('./module/myfirstmodule');
 
 http.createServer(function (req, res) {
 	
+	console.log('request is coming at ' + new Date());
+	
   if(req.url =="/date"){
 	  res.write("The date and time are currently: " + dt.myDateTime());
 	  res.end();
