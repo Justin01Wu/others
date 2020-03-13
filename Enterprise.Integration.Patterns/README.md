@@ -15,7 +15,7 @@ All integration solutions have to deal with a few fundamental challenges:
 Over time, developers have overcome these challenges with four main approaches:
 + File Transfer:  import, export
 + Shared Database
-+ Remote Procedure Invocation: RPC, RMO, API
++ Remote Procedure Invocation: RPC, RMI, API, CORBA, COM, SOAP 
 + Messaging
 
 Messaging is a technology that enables high-speed, asynchronous, program-to-program communication with reliable delivery.
@@ -35,6 +35,7 @@ The following are some main decision criteria.
 
 Features of each:
 + File Transfer:
+	+ well decoupled
 	+ Integrators need no knowledge of the internals of an application
 	+ The file's contents and format are negotiated with integrators
 	+ no extra tools or integration packages are needed
@@ -42,6 +43,18 @@ Features of each:
 	+ lack timeliness: staleness of the data, developers must deal with data that isn't quite right
 	+ No distance restriction
 + Shared Database
-	+ 
-+ Remote Procedure Invocation: RPC, RMO, API
+	+ Solve semantic dissonance issue early, avoid later disaster	
+	+ Unified schema is hard to design: technical difficulties and political difficulties
+	+ No stale data
+	+ Hard to add adopter
+	+ Performance bottleneck, deadlocks 
+	+ Network or Distributing challenges for wide-area  
++ Remote Procedure Invocation: 
+	+ encapsulation helps reduce the coupling of the applications
+	+ applications are still fairly tightly coupled together.
+	+ share functionality, others only share data
+	+ each application has to negotiate its interface with its neighbors
+	+ less learning curve for developers
+	+ Network challenges for wide-area  
+	
 + Messaging
