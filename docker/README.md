@@ -1,6 +1,6 @@
 # Docker
 
-## basic 
+## Basic 
 + Docker will automatically download image and its dependencies if they are not in the local for first time running
 + Docker image will automatically quit if there is no service is started from your CMD
 + You can use bash service to stop image quiting for testing
@@ -8,6 +8,18 @@
 + To save something, you have to share your host folder into the image
 + Docker image is much smaller than VM image, but it is still big
 
+## Common commands:
++ run a image: `docker run -p 8686:8080 -it dev/tomcat8.5.35 bash`
+ + `-p 8686:8080` image port map to host port 
+ + `dev/tomcat8.5.35` : image name plus version
+ + `bash` : add an extra command after the image is started
++ run a image: `docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7.29`
+ + `--name some-mysql` give instance a good name, otherwise it is a process number
+ + `-e MYSQL_ROOT_PASSWORD=my-secret-pw`  : Set environment variables
++ find running instance:  `docker ps`
++ get help : docker run --help
+
+ 
 ## Troubles:
 + I need to restart docker desktop after I re-login, otherwise I can't run docker:
 ```
