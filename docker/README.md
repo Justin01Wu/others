@@ -13,6 +13,7 @@
 	+ `-p 8686:8080` image port map to host port 
 	+ `dev/tomcat8.5.35` : image name plus version
 	+ `bash` : add an extra command after the image is started
+	+ `-it`  open console
 + run a image: `docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7.29`
 	+ `--name some-mysql` give instance a good name, otherwise it is a process number
 	+ `-e MYSQL_ROOT_PASSWORD=my-secret-pw`  : Set environment variables
@@ -35,6 +36,18 @@
 	(795de4408b54c48c37a8960cabafb2f60a8b092a17834f091ab958847b7d63bc): 
 	Error starting userland proxy: mkdir /port/tcp:0.0.0.0:8686:tcp:172.17.0.2:8080: input/output error.
 ```
+
+## Docker image (df file)
+```
+	FROM ubuntu:18.04
+	COPY . /app
+	RUN make /app
+	CMD python /app/app.py
+```
++ `FROM` : template
++ `COPY` : copy from host
++ `RUN`  : execute on the building image
++ `CMD`  : execute on the image starting (can only have one CMD
 
 ## Docker resources
 + docker hub:  https://hub.docker.com/
