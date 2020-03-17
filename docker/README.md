@@ -10,15 +10,22 @@
 
 ## Common commands:
 + run a image: `docker run -p 8686:8080 -it dev/tomcat8.5.35 bash`
- + `-p 8686:8080` image port map to host port 
- + `dev/tomcat8.5.35` : image name plus version
- + `bash` : add an extra command after the image is started
+	+ `-p 8686:8080` image port map to host port 
+	+ `dev/tomcat8.5.35` : image name plus version
+	+ `bash` : add an extra command after the image is started
 + run a image: `docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7.29`
- + `--name some-mysql` give instance a good name, otherwise it is a process number
- + `-e MYSQL_ROOT_PASSWORD=my-secret-pw`  : Set environment variables
+	+ `--name some-mysql` give instance a good name, otherwise it is a process number
+	+ `-e MYSQL_ROOT_PASSWORD=my-secret-pw`  : Set environment variables
+	+ -d Run container in background and print container ID
+	+ `mysql:5.7.29`  image name plus version
 + find running instance:  `docker ps`
 + get help : docker run --help
-
++ build a image: `docker build -f tomcat.df -t dev/tomcat8.5.35 .`
+	+ `-f tomcat.df`  specify builder file 
+	+ `-t dev/tomcat8.5.35` specify target image name
+	+ `.` target folder
++ stop an image instance: `docker stop 32f37a14ed6f`
+	+ `32f37a14ed6f` image container Id(processId)
  
 ## Troubles:
 + I need to restart docker desktop after I re-login, otherwise I can't run docker:
