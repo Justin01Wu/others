@@ -44,10 +44,10 @@
 	RUN make /app
 	CMD python /app/app.py
 ```
-+ `FROM` : template
++ `FROM` : template in docker center hub or other hub
 + `COPY` : copy from host
 + `RUN`  : execute on the building image
-+ `CMD`  : execute on the image starting (can only have one CMD
++ `CMD`  : execute on the image starting (can only have one CMD)
 
 ## Docker resources
 + docker hub:  https://hub.docker.com/
