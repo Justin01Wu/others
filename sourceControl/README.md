@@ -11,6 +11,7 @@
 	+   But Svn need to search the history on the server, take long time 
 	+   git search local history
 <img src="img\svn_merge_commits.png"> 
+
 +   Git usually use pull request to merge branches. 
     Svn save  merge info, will become slow after many merges, 
 	but it bring branch history into target, and can ignore the merged history if it has the same source, 
