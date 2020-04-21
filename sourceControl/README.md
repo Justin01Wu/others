@@ -7,11 +7,14 @@
 	Git commit hash is different even if you commit the same content in a different branch because it also includes commit date in the hash.
 3.  GIT still get tree conflict if the file is moved and renamed while another user changed the content, or deleted and edited
 4.  Both Git and SVN has a powerful function to find who changed which line in what time in the BLAME function. 
-    It will trace back all kinds of merging process and find original changes , but Svn need to search the history on the server, take long, git search local history
+    It will trace back all kinds of merging process and find original changes.
+	1.  But Svn need to search the history on the server, take long time 
+	2.  git search local history
 <img src="img\svn_merge_commits.png"> 
 5.  Git usually use pull request to merge branches. 
     Svn save  merge info, will become slow after many merges, 
-	but it bring branch history into target, and can ignore the merged history if it has the same source, git merge finds difference, so history will get lost
+	but it bring branch history into target, and can ignore the merged history if it has the same source, 
+	git merge finds commit hash difference, so history will be keeped
 6.  SVN can directly merge remote side code with uncommitted local changing, 
     GIT will get unclean error if the changing is on the same file. GIT needs to stash it before do pull request.
 7.  Based on git feature, we should create as much branches as we can, every branch only handle one feature.
