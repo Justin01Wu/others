@@ -13,9 +13,9 @@
     Svn save  merge info, will become slow after many merges, 
 	but it bring branch history into target, and can ignore the merged history if it has the same source, git merge finds difference, so history will get lost
 6.  SVN can directly merge remote side code with uncommitted local changing, 
-    GIT will get unclean error if the changing is on the same file. GIT needs to stash it before do pull request
-7.  Based on git feature, we should create as much branches as we can, every branch only handle one feature
-8.  DevOps doesn’t have a good tool to solve conflict when it is merging branches. We have to use TortoiseGit and solve conflict in the local
+    GIT will get unclean error if the changing is on the same file. GIT needs to stash it before do pull request.
+7.  Based on git feature, we should create as much branches as we can, every branch only handle one feature.
+8.  DevOps doesn’t have a good tool to solve conflict when it is merging branches. We have to use TortoiseGit and solve conflict in the local.
 9.  Rebase is correct command to merge trunk into a branch in GIT, it maybe have conflicts, 
     you need to resolve them in the local, pull request did same thing, but will lost some history sometimes
 10.  Rebase will automatically commit when it is done. You need push if it is good, you need hard remove local commits if it is not good 
