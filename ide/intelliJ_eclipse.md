@@ -18,7 +18,6 @@ I just did some testing this afternoon and found those things:
 
 ## Why to migrate to IntelliJ
  
-
 + Eclipse has troubles to handle Azure Git
 + and it gave up JavaScript support since 2018.
 + IntellJ has much better support on Javascript and html.
@@ -57,8 +56,24 @@ Build the project in IntellJ:
 	+ it will print as CATALINA_BASE in the beginning of the tomcat console 
 + you need to do something to enable hot deploy:  
     https://mkyong.com/intellij/intellij-idea-auto-reload-a-web-application-hot-deploy/	
++ IntelliJ has multiple set of keyMap, one is copied from Eclipse(file-> setting->keyMap), so you will have easy life if you use it
 
 ## Compare with Eclipse:
 + By default, IntelliJ used big font, will show less lines in the same size windows
-+ go back in VSC, Eclipse and Adobe pdf reader are the same "alt+ left arrow, but IntelliJ default is different
-+ IntelliJ has multiple set of keyMap, one is copied from Eclipse(file-> setting->keyMap), so you will have easy life if you use it 
++ Only basic version of IntelliJ is free, it has limited function, like no JSP or Javascript supporting
++ Eclipse has 2-3 times more plugin than IntelliJ, for example, I didn't find AWS plugin for IntelliJ 
++ IntelliJ used about 3-4 times memory than Eclipse, more disk space than Eclipse
++ Both have good supporting for Java
+    + But Eclipse can support other languages: Python, C++
+    + IntelliJ has much better supporting on JavaScript and TypeSCript
++ IntelliJ is better than Eclipse in those areas:
+    + debugging
+    + refactoring
+    + Usability
+    + Autocomplete
++ Eclipse is better than IntelliJ in those areas:  
+    + Performance
+    + Old technology, like JSF
+    + plugin  
++ "go back" in VSC, Eclipse and Adobe pdf reader are the same "alt+ left arrow", but IntelliJ default is different
+ 
