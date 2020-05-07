@@ -38,7 +38,7 @@ Build the project in IntellJ:
 1. remove unnecessary modules except shared-java, shared-UI, Treaty , DNF
 2.  maven -> re-import those modules
     1.   you maybe need to setup JDK for this project in File -> Project Structure
-3.   Because IntelliJ has different explanation on maven process from Eclipse, many maven  process need to be adjusted for it:
+3.  Because IntelliJ has different explanation on maven process from Eclipse, many maven  process need to be adjusted for it:
     1.   need to remove version999 related maven process in shared-UI
     2.   need to remove jspc-maven-plugin maven process in shared-UI
 	3.   need to remove buildVersion888 related maven process in Treaty, also remove maven-war-plugin	
@@ -61,4 +61,4 @@ Build the project in IntellJ:
 ## Compare with Eclipse:
 + By default, IntelliJ used big font, will show less lines in the same size windows
 + go back in VSC, Eclipse and Adobe pdf reader are the same "alt+ left arrow, but IntelliJ default is different
-+ Good news is that IntelliJ has multiple set of keyMap, one is copied from Eclipse, so you will have easy life if you use it 
++ IntelliJ has multiple set of keyMap, one is copied from Eclipse(file-> setting->keyMap), so you will have easy life if you use it 
