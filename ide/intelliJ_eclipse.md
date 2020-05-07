@@ -42,7 +42,7 @@ Build the project in IntellJ:
     1.   need to remove version999 related maven process in shared-UI
     2.   need to remove jspc-maven-plugin maven process in shared-UI
 	3.   need to remove buildVersion888 related maven process in Treaty, also remove maven-war-plugin	
-4.  build module Treaty, should succeed
+4.  build module Treaty in maven view, should succeed
 5.  run -> edit configuration -> add new config(+) -> tomcat server-> local -> configure: then choose external tomcat folder
 6.  change url to http://localhost:8080/vcaps3
 7.  go to deployment tab, it is empty, now add "Treaty:war exploded" into it, not "Treaty:war" 
