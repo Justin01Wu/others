@@ -7,12 +7,12 @@ http://www.linkedin.com/in/justin01wu
 ## HIGHLIGHTS 
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
 - Have the highest production rate on code, document, tickets with the best quality in the team
-- Excellent ability on API design
+- Excellent ability on System design with critical thinking
 - AWS Certified Developer and Solution Architect -Associate
 - Strong experience on frameworks evaluation and dependency controlling
 - Automation and cost expert on SLDC
 - Introduced 0 bug into PROD in 2019 from my code
-- Never cause unexpected troubles when introducing a new technology with critical thinking
+- Never cause unexpected troubles when introducing a new technology 
 
 ## TECHNICAL SKILLS
 Type | Skills
@@ -20,7 +20,7 @@ Type | Skills
 Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, XML, 
 Platform | Linux(10yrs), AWS, Azure, , Docker, Lamdba
 Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
-Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, Cassandra, DynamoDb, Hibernate, JPA, MyBatis
+Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
 UI | AngularJs(5yrs), Angular(1yr), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
 CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
