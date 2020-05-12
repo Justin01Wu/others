@@ -21,7 +21,7 @@ Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, X
 Platform | Linux(10yrs), AWS, Azure, , Docker, Lamdba
 Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
 Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, Cassandra, DynamoDb, Hibernate, JPA, MyBatis
-UI | AngularJs(5yrs), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, Http2, web component 
+UI | AngularJs(5yrs), Angular(1yr), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
 CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
 Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
@@ -31,23 +31,24 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
-- Successfully modernize 12 years old underwriter pricing system in low cost while adding new functions
-- Split VCAPS into two application and 5 modules
+- Extreamly reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
+- Conduct most of technical upgrading in the VCAPS: log4j, Connection Pool, RESTful API, CICD pipe Line, Authenication center and etc.
+- Successfully modernize VCAPS system in low cost while adding new functions
+- Split VCAPS into two applications and 5 modules
 - Convert some parts of VCAPS into micro service and moving some into cloud
 - Have the highest production rate on coding, document, tickets with the best quality in the team
-- Coordinated 5 developers on the new cession workflow to meet tough deadline,which finished about 200 developer tickets in 2 months
+- Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 developer tickets in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
-- Conduct most of technical framework switching and upgrading in the VCAPS: log4j, Jersey, Jackson, Maven, Spnego SSO and etc.
 - Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
-- Integrate with SICS,  KeyCloak, Active Directory, API gateway, and Exchange server
+- Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexiable data converting mechinism
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
-  modularity design,  encapsulation, dependency management. Designed 90% integration test cases
+  modularity design, encapsulation, dependency management. Designed 90% integration test cases
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
 - Improve security by introduce Kerberos SSO and SSL
 #### Environment: 
-Java, JavaScript, Html5, Web 2.0, Ajax, RESTful, JQuery, AngularJs, JsTree, MicroService, CSS3, Eclipse, Junit, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda,AWS, MyBatis, Spring boot
+Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Decompiler, AngularJs, Angular, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
 
 ## Blackberry 2011.04-2014.07
 ### Project: BBM channel and BBM channel admin portal 
