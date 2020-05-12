@@ -31,8 +31,8 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
-- Extreamly reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
-- Conduct most of technical upgrading in the VCAPS: log4j, Connection Pool, RESTful API, CICD pipe Line, Authenication center and etc.
+- Extremely reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
+- Conduct most of technical upgrading in the VCAPS: log4j, Connection Pool, RESTful API, CICD pipe Line, Authentication center and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules
 - Convert some parts of VCAPS into micro service and moving some into cloud
@@ -40,7 +40,7 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 developer tickets in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
 - Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
-- Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexiable data converting mechinism
+- Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Designed 90% integration test cases
