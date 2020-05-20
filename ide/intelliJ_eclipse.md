@@ -65,7 +65,7 @@ Build the project in IntellJ:
 + IntelliJ used about 3-4 times memory than Eclipse, more disk space than Eclipse
 + Both have good supporting for Java
     + But Eclipse can support other languages: Python, C++
-    + IntelliJ has much better supporting on JavaScript and TypeSCript
+    + IntelliJ has much better supporting on JavaScript and TypeScript
 + IntelliJ is better than Eclipse in those areas:
     + debugging
     + refactoring
