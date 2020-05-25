@@ -32,7 +32,7 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
 - Extremely reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
-- Conduct most of technical upgrading in the VCAPS: log4j, Connection Pool, RESTful API, CICD pipe Line, Authentication center and etc.
+- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Jersey, RESTful API, Jackson,  AngularJs,  CICD pipe Line, Authentication center and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules
 - Convert some parts of VCAPS into micro service and moving some into cloud
