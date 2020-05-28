@@ -18,7 +18,7 @@ http://www.linkedin.com/in/justin01wu
 Type | Skills
 ------------ | -------------
 Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, XML, 
-Platform | Linux(10yrs), AWS, Azure, , Docker, Lamdba
+Platform | Linux(10yrs), AWS, Azure, , Docker, Lambda
 Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
 Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
 UI | AngularJs(5yrs), Angular(1yr), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
