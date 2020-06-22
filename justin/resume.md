@@ -6,10 +6,10 @@ http://www.linkedin.com/in/justin01wu
 
 ## HIGHLIGHTS 
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
+- Strong experience on solution providing and evaluation with challenging
+- Excellence on System design and dependency controlling with critical thinking
 - Have the highest production rate on code, document, tickets with the best quality in the team
-- Excellent ability on System design with critical thinking
 - AWS Certified Developer and Solution Architect -Associate
-- Strong experience on frameworks evaluation and dependency controlling
 - Automation and cost expert on SLDC
 - Introduced 0 bug into PROD in 2019 from my code
 - Never cause unexpected troubles when introducing a new technology 
