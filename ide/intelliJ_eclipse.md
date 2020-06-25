@@ -47,6 +47,7 @@ Build the project in IntellJ:
 7.  go to deployment tab, it is empty, now add "Treaty:war exploded" into it, not "Treaty:war" 
 8.  change application context to /vcaps3
 9.  start tomcat, now you can see the result in the browser
+10. Need to do maven -reload project (similar as Eclipse maven update project) sometimes if external resources are changed, like manually added artifact in the local repo
 
 
 ## IntelliJ Tips
