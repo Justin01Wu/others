@@ -12,7 +12,7 @@ http://www.linkedin.com/in/justin01wu
 - Have the highest production rate on code, document, tickets with the best quality in the team
 - Found 0 bug on PROD from my code in 2019 and 2020
 - AWS Certified Developer and Solution Architect -Associate
-- Automation and cost expert on leaning, developing and maintaining
+- Automation and cost expert on learning, developing and maintaining
 - Never cause unexpected troubles when introducing a new technology 
 
 ## TECHNICAL SKILLS
