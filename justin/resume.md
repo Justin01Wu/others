@@ -5,7 +5,7 @@ http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
-- Handson experience on Microservice, Angular, Sping Boot amd AWS Cloud
+- Hands-on experience on Microservice, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
 - Strong experience on solution providing and evaluation with challenging
 - Excellence on System design and dependency controlling with critical thinking
@@ -33,10 +33,10 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
 - Obviously reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
-- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Jersey, RESTful API, Jackson,  AngularJs,  CICD pipeline, Authentication center and etc.
+- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Jersey, RESTful API, Jackson, Angular,  CICD pipeline, Authentication center and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, setup private maven repo
-- Convert some parts of VCAPS into micro service and moving some into cloud
+- Convert some parts of VCAPS into micro service and moving some into AWS cloud
 - Have the highest production rate on coding, document, tickets with the best quality in the team
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 developer tickets in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
@@ -49,11 +49,11 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Designed a framework to generate developer friendly RESTful API docs on integration testing result 
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
-- Designed and implemented Chapter page nagivator, cahce service  and large file process on Javascript
+- Designed and implemented Chapter page navigator, cache service  and large file process on JavaScript
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector,  model file selector, orig of business selector, deal selector and so on
 - Designed and implemented more than a dozen of web components on Angular: Premium calculator, structure calculator, cyber selector, Pricing result and son on
 - Improve security by introduce Kerberos SSO and SSL
-- Designed and imolemented contract history tool in a low cost to supporting future fields changing and fields groups
+- Designed and implemented contract history tool in a low cost to supporting future fields changing and fields groups
 - Provided permission checking tool for admin in a low cost
 #### Environment: 
 Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
