@@ -2,26 +2,27 @@
 L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780  •  Skype: wuyg719
 
 http://www.linkedin.com/in/justin01wu
-## OBJECTIVE: Solution Architect / Sr Java developer/Full stack Developer
+## OBJECTIVE: Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
+- Handson experience on Microservice, Angular, Sping Boot amd AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
 - Strong experience on solution providing and evaluation with challenging
 - Excellence on System design and dependency controlling with critical thinking
 - Have the highest production rate on code, document, tickets with the best quality in the team
+- Found 0 bug on PROD from my code in 2019 and 2020
 - AWS Certified Developer and Solution Architect -Associate
-- Automation and cost expert on SLDC
-- Introduced 0 bug into PROD in 2019 from my code
+- Automation and cost expert on leaning, developing and maintaining
 - Never cause unexpected troubles when introducing a new technology 
 
 ## TECHNICAL SKILLS
 Type | Skills
 ------------ | -------------
-Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript, Python, C#, XML, 
+Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript(2yrs), Python, C#, XML, 
 Platform | Linux(10yrs), AWS, Azure, , Docker, Lambda
 Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
 Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
-UI | AngularJs(5yrs), Angular(1yr), NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
+UI | AngularJs(5yrs), Angular(2yrs), Angular material, Angular elements, NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
 CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
 Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
@@ -31,25 +32,31 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
-- Extremely reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
+- Obviously reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
 - Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Jersey, RESTful API, Jackson,  AngularJs,  CICD pipeline, Authentication center and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
-- Split VCAPS into two applications and 5 modules
+- Split VCAPS into two applications and 5 modules, setup private maven repo
 - Convert some parts of VCAPS into micro service and moving some into cloud
 - Have the highest production rate on coding, document, tickets with the best quality in the team
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 developer tickets in 2 months
-- Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
+- Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Setup Integration testing environment and designed 90% integration test cases
+- Found a smart way to detect legacy connection pool leaking 
 - Designed a framework to generate developer friendly RESTful API docs on integration testing result 
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
+- Designed and implemented Chapter page nagivator, cahce service  and large file process on Javascript
+- Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector,  model file selector, orig of business selector, deal selector and so on
+- Designed and implemented more than a dozen of web components on Angular: Premium calculator, structure calculator, cyber selector, Pricing result and son on
 - Improve security by introduce Kerberos SSO and SSL
+- Designed and imolemented contract history tool in a low cost to supporting future fields changing and fields groups
+- Provided permission checking tool for admin in a low cost
 #### Environment: 
-Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Decompiler, AngularJs, Angular, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
+Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
 
 ## Blackberry 2011.04-2014.07
 ### Project: BBM channel and BBM channel admin portal 
@@ -91,7 +98,7 @@ Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Li
 Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven, Jenkins, Git, system integration, Agile, scrum
 
 ## Tungle Corp. Waterloo 2008.08-2011.04
-### Role: Senior Java Developer
+### Role: Key Java Developer
 
  - Identify, analyze, and capture system requirements, translate  into specifications and design
  - Lead server side function implementation and integration with web UI, mobile phone, and plug-ins in rapid web 2 applications  - - -development, including system analysis, system infrastructure, solution evaluation, risk analysis, algorithm development
