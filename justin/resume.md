@@ -30,7 +30,7 @@ Security | OAuth , KeyCloak, API Gateway, OpenID, Spnego, Kerberos, NTLM
 Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 
 # WORK EXPERIENCE: 
-### AIG  - Validus Group(http://www.validusholdings.com/)  2014.09-present
+### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect
 - Obviously reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
 - Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Jersey, RESTful API, Jackson, Angular,  CICD pipeline, Authentication center and etc.
