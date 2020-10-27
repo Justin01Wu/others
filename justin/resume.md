@@ -5,9 +5,9 @@ http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
-- Hands-on experience on Microservice, Angular, Spring Boot and AWS Cloud
+- Strong experience on Microservice, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, network and PM
-- Strong experience on solution providing and evaluation with challenging
+- Excellent experience on solution providing and evaluation with challenging
 - Excellence on System design and dependency controlling with critical thinking
 - Have the highest production rate on code, document, tickets with the best quality in the team
 - Found 0 bug on PROD from my code in 2019 and 2020
@@ -26,7 +26,7 @@ UI | AngularJs(5yrs), Angular(2yrs), Angular material, Angular elements, NodeJs,
 CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
 Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
-Security | OAuth , KeyCloak, API Gateway, OpenID, Spnego, Kerberos, NTLM
+Security | OAuth , KeyCloak, Cognito, API Gateway, OpenID, Spnego, Kerberos, NTLM
 Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 
 # WORK EXPERIENCE: 
@@ -42,7 +42,9 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
-- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
+- Seamless integrate angular project into a complicated legacy web page which has about 15k lines of JavaScript code
+- Gradually replaced about 350 JSP/JSF pages in VCAPS with angular single page application project
+- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor leg acy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Setup Integration testing environment and designed 90% integration test cases
 - Found a smart way to detect legacy connection pool leaking 
