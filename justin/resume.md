@@ -19,7 +19,7 @@ http://www.linkedin.com/in/justin01wu
 Type | Skills
 ------------ | -------------
 Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript(2yrs), Python, C#, XML, 
-Platform | Linux(10yrs), AWS, Azure, , Docker, Lambda
+Platform | Linux(10yrs), AWS, Azure, Docker, Lambda
 Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
 Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
 UI | AngularJs(5yrs), Angular(2yrs), Angular material, Angular elements, NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
@@ -38,11 +38,11 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Split VCAPS into two applications and 5 modules, setup private maven repo
 - Convert some parts of VCAPS into micro service and moving some into AWS cloud
 - Have the highest production rate on coding, document, tickets with the best quality in the team
-- Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 developer tickets in 2 months
+- Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing Angularjs, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
-- Seamless integrate angular project into a complicated legacy web page which has about 15k lines of JavaScript code
+- Seamless integrate angular project into a complicated legacy web page which has about 600k JS code
 - Gradually replaced about 350 JSP/JSF pages in VCAPS with angular single page application project
 - Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor leg acy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
