@@ -8,3 +8,7 @@ aws polly synthesize-speech --text "Hello AWS World!" --voice-id Joanna --output
 aws s3 ls
 aws s3 ls justa
 aws glacier list-vaults --account-id -
+
+
+# user related (AWS CLI version 1)
+aws sts get-caller-identity
