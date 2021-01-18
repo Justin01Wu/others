@@ -7,7 +7,7 @@ There are two type of authorize mode:
     + sample : users can grant another users or 3rd party application to access their Gmail or online photos.
 + delegation: is usually used in enterprise application, the application represents the permission for users, users info is in payload.
     + Sample : database access, AWS access
-	+ user info in the payload: update contract set updatedBy=1234 where contractId = 4567
+	+ user info in the payload: update contract set updatedBy=**1234** where contractId = 4567
 
 The application  should use delegation mode, then we don’t have token renewal issue because it is not exposed to end user. 
 
