@@ -8,7 +8,8 @@ It has two type of authorize mode:
 + delegation: usually used in enterprise application, the application represents the permission for users, users info is in payload.
     + Sample : db access, AWS access
 
-Wrong authority mode in the application: should use delegations. We don’t have token renewal issue
+Wrong authority mode in the application: should use delegations. 
+We don’t have token renewal issue because it is not exposed to end user. 
 
 ## "as user" function 
 "as user" function is degined for QA and DEV env to simulate another user to test permission 
