@@ -9,8 +9,7 @@ There are two type of authorize mode:
     + Sample : database access, AWS access
 	+ user info in the payload: update contract set updatedBy=1234 where contractId = 4567
 
-Wrong authority mode in the application: should use delegations. 
-We don’t have token renewal issue because it is not exposed to end user. 
+The application  should use delegation mode, then we don’t have token renewal issue because it is not exposed to end user. 
 
 ## "as user" function 
 
