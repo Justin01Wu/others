@@ -1,26 +1,25 @@
 # Security discuss
 
 ## Authorize mode
-It has two type of authorize mode:
+There are two type of authorize mode:
 
-+ direct grant: usually used in social media. Users manage their permission by themselves to decide who can access their resources 
-    + sample : users can grant another users or 3rd party application to access their gmail or online photos.
-+ delegation: usually used in enterprise application, the application represents the permission for users, users info is in payload.
-    + Sample : db access, AWS access
++ direct grant: is usually used in social media. End users manage permissions by themselves to decide who or which application can access their resources 
+    + sample : users can grant another users or 3rd party application to access their Gmail or online photos.
++ delegation: is usually used in enterprise application, the application represents the permission for users, users info is in payload.
+    + Sample : database access, AWS access
+	+ user info in the payload: update contract set updatedBy=**1234** where contractId = 4567
 
-Wrong authority mode in the application: should use delegations. 
-We don’t have token renewal issue because it is not exposed to end user. 
+The application  should use delegation mode, then we don’t have token renewal issue because it is not exposed to end user. 
 
 ## "as user" function 
-"as user" function is degined for QA and DEV env to simulate another user to test permission 
 
-As user issues: this is implemented in the application. 
+"as user" function is designed for QA and DEV environment to simulate another user to test permission.
 
-But it is a bad place to implement in it. 
+It is implemented in the application. But it is a bad place to implement in it because every front line application need this function for QA.
 
-It should be implemented in auth center because every front line application need this function for QA.
+It should be implemented in authenticate center or a shared application.
 
-
+	
 ## Grant type
 It has three types of granting:
 + Authorization code grant: The authorization code grant is the preferred method for authorizing end users. 
