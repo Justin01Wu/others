@@ -18,12 +18,12 @@ http://www.linkedin.com/in/justin01wu
 ## TECHNICAL SKILLS
 Type | Skills
 ------------ | -------------
-Language | Java(18yrs), JavaScript(18yrs), SQL(23yrs), TypeScript(2yrs), Python, C#, XML, 
-Platform | Linux(10yrs), AWS, Azure, Docker, Lambda
-Framework | Spring(10yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
-Database | SQL Server(10yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
-UI | AngularJs(5yrs), Angular(2yrs), Angular material, Angular elements, NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
-CI/CD | Maven(6yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
+Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python, C#, XML, 
+Platform | Linux(11yrs), AWS, Azure, Docker, Lambda
+Framework | Spring(11yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, JSTL, Lucene, Avro
+Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA, MyBatis
+UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
+CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
 Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
 Security | OAuth , KeyCloak, Cognito, API Gateway, OpenID, Spnego, Kerberos, NTLM
@@ -54,11 +54,11 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Designed and implemented Chapter page navigator, cache service  and large file process on JavaScript
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector,  model file selector, orig of business selector, deal selector and so on
 - Designed and implemented more than a dozen of web components on Angular: Premium calculator, structure calculator, cyber selector, Pricing result and son on
-- Improve security by introduce Kerberos SSO and SSL
+- Improve security by introducing three generation authentication :  Kerberos SSO and SSL, KeyCloak, Cognito
 - Designed and implemented contract history tool in a low cost to supporting future fields changing and fields groups
 - Provided permission checking tool for admin in a low cost
 #### Environment: 
-Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
+Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, bower, H2, grunt, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, Cognito, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
 
 ## Blackberry 2011.04-2014.07
 ### Project: BBM channel and BBM channel admin portal 
