@@ -213,6 +213,7 @@ You can see below picture for environment details which is got from a lambda fun
 - Only support some languages or some language versions
 - Have to use AWS cloud watch to log, can’t use third party logger because you can’t access log file
 - Some ports are blocked, like SMTP port
+- will create an unexpected cost if the code has infinite loop bug, traditional code only slow down the server
 - No way to debug, AWS SAM CLI(beta) helps but need complicated installation (docker…)
 - Big function is split into small functions and scatter to many places, hard to manage them: upgrading, versioning, trouble shooting…
 - Hard to share code
