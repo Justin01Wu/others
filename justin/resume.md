@@ -2,18 +2,18 @@
 L6M 0V8, Oakville, ON  • justin01.wu@gmail.com  • 226-338-5780  •  Skype: wuyg719
 
 http://www.linkedin.com/in/justin01wu
-## OBJECTIVE: Solution Architect / Sr Full stack Developer / Sr Java developer
+## OBJECTIVE: Results-driven Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
-- Strong experience on Microservice, Angular, Spring Boot and AWS Cloud
+- Strong experience on MicroService, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, automation, network and PM
-- Excellent experience on solution providing and evaluation with challenging
-- Excellence on System design and dependency controlling with critical thinking
+- Demonstrated mastery in evaluating requirements with excellent written and verbal communication skills 
+- More than 5 years experience on system design, solution providing with critical thinking
 - Have the highest production rate on code, document, tickets with the best quality in the team
 - Found 0 bug on PROD from my code in 2019 and 2020
 - AWS Certified Developer and Solution Architect -Associate
 - Cost expert on learning, developing and maintaining
-- Never cause unexpected troubles when introducing a new technology 
+- Never caused unexpected troubles when introducing a new technology 
 
 ## TECHNICAL SKILLS
 Type | Skills
@@ -22,10 +22,10 @@ Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python,
 Platform | Linux(11yrs), AWS, Azure, Docker, Lambda, EC2, S3
 Framework | Spring(11yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
 Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, NodeJs, JQuery, jQuery UI, CSS3, HTML5, Bootstrap, web component 
-CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, Perforce, DevOps, JIRA, fishEye
-Testing | Junit, jMockit, Jmeter, Selenium, WebDriver
-Experience | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
+UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, NodeJs, JQuery, CSS3, Bootstrap, web component 
+CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
+Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
+Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
 Security | OAuth , KeyCloak, Cognito, API Gateway, OpenID, Spnego, Kerberos, NTLM, SAML
 Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 
@@ -57,6 +57,7 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Improve security by introducing three generation authentication :  Kerberos SSO and SSL, KeyCloak, Cognito
 - Designed and implemented contract history tool in a low cost to supporting future fields changing and fields groups
 - Provided permission checking tool for admin in a low cost
+
 #### Environment: 
 Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, SAML, H2, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, Cognito, AWS, EC2, S3, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
 
@@ -75,6 +76,7 @@ Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decomp
  - Create regular express for 200 emoticon strings and their alternatives
  - Improve performance by CSS Image Sprites, CDN and file merging
  - Prepare release notes
+
 #### Environment: 
 Java, Spring, JavaScript, Linux, Geronimo, Cassandra, Html5, Web 2.0, Ajax, RESTful, JQuery, Ember, RequireJs, Bootstrap, CSS, Eclipse, Junit, Json, Mockjax, Maven, Jenkins, Selenium, Fiddler, perforce, refactoring, Firebug, system integration, Agile, Scrum, JIRA
 
@@ -86,8 +88,10 @@ Java, Spring, JavaScript, Linux, Geronimo, Cassandra, Html5, Web 2.0, Ajax, REST
  - Handle special flows for openId return
  - Implement revoke flow and page
  - Implement sample client code for provider
+
 #### Environment: 
 Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Linux, Json, Geronimo, JavaScript,  - Cassandra, Web 2.0, Ajax, JQuery, RESTful, CSS, Eclipse, Junit, Maven, Jenkins, perforce, Firebug, system integration, Agile
+
 ### Project: Calendar application for Blackberry 10
 #### Role: Senior Software Developer
 
@@ -96,6 +100,7 @@ Java, Spring, Spring Security, Spring Security Oauth2, openid4java, Fiddler,  Li
  - Handle data in Blackberry 10 device
  - Control Blackberry 10 UI interface
  - Cover more than a half functional test cases in the automation testing
+
 #### Environment: 
 Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven, Jenkins, Git, system integration, Agile, scrum
 
@@ -117,6 +122,7 @@ Java, Groovy, Linux, Eclipse, C++, Junit, BBJAM, Python, shell scripting, Maven,
  - High volume asynchronous transaction on data integration
  - Designed and implemented advance full text search and yellow page function
  - Share knowledge with new team members
+
 #### Environment: 
 Java, Linux, Jboss, Clustering, EJB 3.0, J2EE, distributed system ,Web 2.0, Ajax, JQuery, SOAP, CSS, Mysql, Mysql query analyzer, Eclipse, Hibernate, Junit, Jmeter, JavaScript, Jmock, Ant, Hudson, Selenium, Ant, Restful, XML/SOAP, XSD, XSLT, XmlSpy, Subversion, refactoring, UML, Firebug, MQ, JMS, MDB, system integration, Dependency Injection(DI), Guice, Agile development, Apache, Lucene
 
