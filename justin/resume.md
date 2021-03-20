@@ -7,10 +7,9 @@ http://www.linkedin.com/in/justin01wu
 ## HIGHLIGHTS 
 - Strong experience on MicroService, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, automation, network and PM
-- Demonstrated mastery in evaluating requirements with excellent written and verbal communication skills 
+- Demonstrated mastery in evaluating requirements with excellent communication skills 
 - More than 5 years experience on system design, solution providing with critical thinking
 - Have the highest production rate on code, document, tickets with the best quality in the team
-- Found 0 bug on PROD from my code in 2019 and 2020
 - AWS Certified Developer and Solution Architect -Associate
 - Cost expert on learning, developing and maintaining
 - Never caused unexpected troubles when introducing a new technology 
