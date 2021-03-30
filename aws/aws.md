@@ -220,7 +220,8 @@ You can see below picture for environment details which is got from a lambda fun
 - Cost is higher than an EC2 if you constantly run some functions, only good for spike or long periodically function ( like monthly report or occasionally upload a file)
 - Can’t use config file, have to use environment variable, which may expose the DB password to the people(encryption helper can reduce it), can set a config file on S3 bucket, please also see  https://www.concurrencylabs.com/blog/configure-your-lambda-function-like-a-champ-sail-smoothly/
 - There is no good way to declare a lambda or a version is deprecated, version and alias can help
-- Maximum 15 minutes and 3Gb for Java, sometimes it is not enough, have to split a whole function into pieces, make it hard. context.getRemainingTimeInMillis helps
+- Maximum 15 minutes and 3Gb for Java(10GB since 2021), sometimes it is not enough, have to split a whole function into pieces, make it hard. context.getRemainingTimeInMillis helps
+- CPU power is decided by memory requirement, user has no control on it, which sometimes is not true
 - Can’t accurately control your hardware, it is hard for some types of work, like I can’t get GPU enhanced machine for my dedicated GPU heavy tasks 
 
 ### Lambda Best practices
