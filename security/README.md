@@ -53,10 +53,10 @@ Sample tomcat web server setting in server.xml:
 Sample nginx setting in nginx.conf:
 ```
     server {
-        listen       443;
-		location /app1/ {
-			proxy_pass http://tomcat.server:8080/app1/;
-		}
+        listen    443;
+        location /app1/ {
+            proxy_pass http://tomcat.server:8080/app1/;
+        }
 ```
 
-When users directly connect http://tomcat.server:8080/app1/, it will be redirected to https://proxy.server.domain/app1
+When users directly connect `http://tomcat.server:8080/app1/`, it will be redirected to `https://proxy.server.domain/app1`
