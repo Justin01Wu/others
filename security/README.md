@@ -58,5 +58,13 @@ Sample nginx setting in nginx.conf:
             proxy_pass http://tomcat.server:8080/app1/;
         }
 ```
-
 When users directly connect `http://tomcat.server:8080/app1/`, it will be redirected to `https://proxy.server.domain/app1`
+
+## WildCard
+
+Except reserved proxy, we can also use WildCard to reduce troubles and cost for QA environment.
+
+WildCast SSL certificate can support multiple sub-domain: 
+    [Wildcard_certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) 
+  
+Compared with reserved proxy, WildCast setting is simple on server side, and network traffic is low (no hot spot on proxy), but need DNS setting.  
