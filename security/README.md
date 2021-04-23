@@ -31,5 +31,32 @@ It has three types of granting:
     While the previous grants are intended to obtain tokens for end users, 
 	the client credentials grant is typically intended to provide credentials to an application in order to authorize machine-to-machine requests.
 
+## SSL and proxy
+In the QA environment, we also need to set SSL on every web server, which is costly.
 
-	
+To avoid setting SSL certificate in each QA web server, we can use reserved proxy to share the SSL certificate:
+<img src="reversed_proxy.png">
+
+Sample tomcat web server setting in server.xml: 
+```
+	<Connector scheme="https"
+               secure="true"
+               port="8080"
+               proxyPort="443"
+               proxyName="proxy.server.domain"
+	       protocol="HTTP/1.1"
+	       connectionTimeout="20000"
+	       disableUploadTimeout="true"
+               enableLookups="false"               
+               />
+```	
+Sample nginx setting in nginx.conf:
+```
+    server {
+        listen       443;
+		location /app1/ {
+			proxy_pass http://tomcat.server:8080/app1/;
+		}
+```
+
+When users directly connect http://tomcat.server:8080/app1/, it will be redirected to https://proxy.server.domain/app1
