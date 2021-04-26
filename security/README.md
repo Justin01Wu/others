@@ -79,7 +79,7 @@ With self signed wildCard domain certificate, Your Java code can't connect the t
             SSLContext sc = SSLContext.getInstance("SSL"); 
             sc.init(null, trustAllCerts, new java.security.SecureRandom()); 
             HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
-            // use this way, we can trust self signed certificate or invalid WildCard certificate            
+            // In this way, we can trust self signed certificate or invalid WildCard certificate            
         } catch (GeneralSecurityException e) {
             throw new UnsupportedOperationException("can't enable TrustManager", e);
         }
