@@ -64,7 +64,60 @@ When users directly connect `http://tomcat.server:8080/app1/`, it will be redire
 
 Except reserved proxy, we can also use WildCard to reduce troubles and cost for QA environment.
 
-WildCast SSL certificate can support multiple sub-domain: 
+WildCard SSL certificate can support multiple sub-domain: 
     [Wildcard_certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) 
   
-Compared with reserved proxy, WildCast setting is simple on server side, and network traffic is low (no hot spot on proxy), but need DNS setting.  
+Compared with reserved proxy, WildCard setting is simple on server side, and network traffic is low (no hot spot on proxy), but need DNS setting.  
+
+With self signed wildCard domain certificate, Your Java code can't connect the target host by default. You need to change default behaviour like this : 
+```
+	public static void initHttpsWithoutValidation() {
+
+		TrustManager[] trustAllCerts = new TrustManager[] {  new TrustAnyCertificate() };  
+		try {
+			SSLContext sc = SSLContext.getInstance("SSL"); 
+			sc.init(null, trustAllCerts, new java.security.SecureRandom()); 
+			HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+			// use this way, we can trust self signed certificate or invalid WildCard certificate		    
+		} catch (GeneralSecurityException e) {
+			throw new UnsupportedOperationException("can't enable TrustManager", e);
+		}
+        
+		HostnameVerifier verifier =  new UntrustedHostVerifier() ;
+		HttpsURLConnection.setDefaultHostnameVerifier(verifier);
+	}
+
+	static class TrustAnyCertificate implements X509TrustManager{
+
+		@Override
+		public void checkClientTrusted(X509Certificate[] certs, String authType) {} 
+
+		@Override
+		public void checkServerTrusted(X509Certificate[] arg0, String arg1) throws CertificateException {}
+
+		@Override
+		public X509Certificate[] getAcceptedIssuers() {
+			return new X509Certificate[0];
+		}
+	}	
+
+	static class UntrustedHostVerifier implements HostnameVerifier{
+		List<String> hostList; 
+		
+		public UntrustedHostVerifier(){        	
+        	hostList  = MyConfig.loadTrustedHostList();;
+		}
+
+		@Override
+		public boolean verify(String hostname, SSLSession sslSession) {			 
+            if (hostList.contains(hostname)) {
+            	// because SSL certificate didn't match the domain name,
+            	// so we have to manually skip SSL certificate verification
+            	log.debug("skip SSL certificate verification on " + hostname);
+                return true;
+            }
+            return false;
+		}		
+	}
+```
+
