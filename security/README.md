@@ -72,7 +72,7 @@ Compared with reserved proxy, WildCard setting is simple on server side, and net
 With self signed wildCard domain certificate, Your Java code can't connect the target host by default. You need to change default behaviour like this : 
 ```java
 
-    public static void initHttpsWithoutValidation() {
+    public static void skipHttpsValidation() {
 
         TrustManager[] trustAllCerts = new TrustManager[] {  new TrustAnyCertificate() };  
         try {
