@@ -105,19 +105,19 @@ With self signed wildCard domain certificate, Your Java code can't connect the t
 		List<String> hostList; 
 		
 		public UntrustedHostVerifier(){        	
-        	hostList  = MyConfig.loadTrustedHostList();;
+			hostList  = MyConfig.loadTrustedHostList();;
 		}
 
 		@Override
 		public boolean verify(String hostname, SSLSession sslSession) {			 
-            if (hostList.contains(hostname)) {
-            	// because SSL certificate didn't match the domain name,
-            	// so we have to manually skip SSL certificate verification
-            	log.debug("skip SSL certificate verification on " + hostname);
-                return true;
-            }
-            return false;
-		}		
+			if (hostList.contains(hostname)) {
+				// because SSL certificate didn't match the domain name,
+				// so we have to manually skip SSL certificate verification
+				log.debug("skip SSL certificate verification on " + hostname);
+				return true;
+			}
+			return false;
+		}
 	}
 ```
 
