@@ -70,7 +70,7 @@ WildCard SSL certificate can support multiple sub-domain:
 Compared with reserved proxy, WildCard setting is simple on server side, and network traffic is low (no hot spot on proxy), but need DNS setting.  
 
 With self signed wildCard domain certificate, Your Java code can't connect the target host by default. You need to change default behaviour like this : 
-```
+```java
 	public static void initHttpsWithoutValidation() {
 
 		TrustManager[] trustAllCerts = new TrustManager[] {  new TrustAnyCertificate() };  
