@@ -9,7 +9,6 @@ http://www.linkedin.com/in/justin01wu
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, automation, network and PM
 - Demonstrated mastery in evaluating requirements with excellent communication skills 
 - More than 5 years experience on system design, solution providing with critical thinking
-- Have the highest production rate on code, document, tickets with the best quality in the team
 - AWS Certified Developer and Solution Architect -Associate
 - Cost expert on learning, developing and maintaining
 - Never caused unexpected troubles when introducing a new technology 
@@ -36,7 +35,6 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
 - Setup CICD pipeline, covering build, unit test , Integration testing, deploy, setup private maven repo
-- Have the highest production rate on coding, document, tickets with the best quality in the team
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing Angularjs and Angular, web component and Font Awesome
