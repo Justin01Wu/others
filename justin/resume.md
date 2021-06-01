@@ -34,23 +34,23 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 - Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
-- Setup CICD pipeline, covering build, unit test , Integration testing, deploy, setup private maven repo
+- Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
-- Achieve user friendly UI in the low cost, introducing Angularjs and Angular, web component and Font Awesome
+- Achieve user friendly UI in the low cost, introducing AngularJs and Angular, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
 - Seamless integrate angular project into a complicated legacy web page which has about 600k JS code
 - Gradually replaced about 350 JSP/JSF pages in VCAPS with angular single page application project
-- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor leg acy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
+- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Setup Integration testing environment and designed 90% integration test cases
 - Found a smart way to detect legacy connection pool leaking 
 - Designed a framework to generate developer friendly RESTful API docs on integration testing result 
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
-- Setup modern build process for projects, improve build process on both maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
+- Setup modern build process for projects, improve build process on both Maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
 - Designed and implemented Chapter page navigator, cache service  and large file process on JavaScript
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector, model file selector, orig of business selector, deal selector and so on
-- Designed and implemented multiple web components on Angular: Premium calculator, structure calculator, cyber selector, Pricing result and son on
+- Designed and implemented multiple web components on Angular: Premium calculator, structure calculator, Cyber selector, Pricing result and son on
 - Improve security by introducing three generation authentication :  Kerberos SSO and SSL, KeyCloak, Cognito
 - Designed and implemented contract history tool in a low cost to supporting future fields changing and fields groups
 - Provided permission checking tool for admin in a low cost
