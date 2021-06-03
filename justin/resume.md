@@ -29,7 +29,7 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 
 # WORK EXPERIENCE: 
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
-#### Role: Solution Architect
+#### Role: Solution Architect/Sr Full Stack Developer
 - Obviously reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
 - Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
