@@ -5,7 +5,7 @@ http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Results-driven Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
-- Strong experience on MicroService, Angular, Spring Boot and AWS Cloud
+- Strong experience on MicroService, RESTful API, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, automation, network and PM
 - Demonstrated mastery in evaluating requirements with excellent communication skills 
 - More than 5 years experience on system design, solution providing with critical thinking
@@ -16,11 +16,11 @@ http://www.linkedin.com/in/justin01wu
 ## TECHNICAL SKILLS
 Type | Skills
 ------------ | -------------
-Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python, C#, XML, 
-Platform | Linux(11yrs), AWS, Azure, Docker, Lambda, EC2, S3
-Framework | Spring(11yrs), Spring Boot, Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
+Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python, XML, 
+Platform | Linux(11yrs), AWS, Docker, Lambda, EC2, S3
+Framework | Spring(7yrs), Spring Boot(3yrs), Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
 Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, NodeJs, JQuery, CSS3, Bootstrap, web component 
+UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, JQuery, CSS3, web component 
 CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
 Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
@@ -30,7 +30,7 @@ Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect/Sr Full Stack Developer
-- Obviously reduce maintenance cost on the 13 yrs legacy VCAPS system by using modern technology and smart design
+- Obviously reduce maintenance cost on the 15 yrs legacy VCAPS system by using modern technology and smart design
 - Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
