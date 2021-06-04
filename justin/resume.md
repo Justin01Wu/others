@@ -5,7 +5,7 @@ http://www.linkedin.com/in/justin01wu
 ## OBJECTIVE: Results-driven Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## HIGHLIGHTS 
-- Strong experience on MicroService, RESTful API, Angular, Spring Boot and AWS Cloud
+- Strong experience on RESTful API, MicroService, Angular, Spring Boot and AWS Cloud
 - Full stack knowledge : UI, server, DB,CI/CD, security, cloud, automation, network and PM
 - Demonstrated mastery in evaluating requirements with excellent communication skills 
 - More than 5 years experience on system design, solution providing with critical thinking
@@ -20,12 +20,12 @@ Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python,
 Platform | Linux(11yrs), AWS, Docker, Lambda, EC2, S3
 Framework | Spring(7yrs), Spring Boot(3yrs), Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
 Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | AngularJs(5yrs), Angular(3yrs), Angular material, Angular elements, JQuery, CSS3, web component 
+UI | AngularJs(7yrs), Angular(3yrs), Angular material, Angular elements, JQuery, CSS3, web component 
 CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
 Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
 Security | OAuth , KeyCloak, Cognito, API Gateway, OpenID, Spnego, Kerberos, NTLM, SAML
-Server | JBoss, Tomcat, Apache, Geronimo, Kafka, Nginx
+Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 
 # WORK EXPERIENCE: 
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
