@@ -11,7 +11,7 @@ http://www.linkedin.com/in/justin01wu
 - More than 5 years experience on system design, solution providing with critical thinking
 - AWS Certified Developer and Solution Architect -Associate
 - Cost expert on learning, developing and maintaining
-- Never caused unexpected troubles when introducing a new technology 
+- Highest code quality in the team(based on bugs stats)
 
 ## TECHNICAL SKILLS
 Type | Skills
@@ -35,6 +35,9 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
 - Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
+- Smoothly integrated new Angular UI with old UI by using web components, build pipelines and angular multiple projects
+- Upgrade vcaps2ui angular version from 4 to 9, more than 100 files were changed
+- Fixed more than 600 hundred XSS issues in a month
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing AngularJs and Angular, web component and Font Awesome
