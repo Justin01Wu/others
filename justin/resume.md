@@ -20,7 +20,7 @@ Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python,
 Platform | Linux(11yrs), AWS, Docker, Lambda, EC2, S3
 Framework | Spring(7yrs), Spring Boot(3yrs), Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
 Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | AngularJs(7yrs), Angular(3yrs), Angular material, Angular elements, JQuery, CSS3, web component 
+UI | AngularJs(7yrs), Angular(5yrs), Angular material, Angular elements, JQuery, CSS3, web component 
 CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
 Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
@@ -37,7 +37,9 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
 - Smoothly integrated new Angular UI with old UI by using web components, build pipelines and angular multiple projects
 - Upgrade vcaps2ui angular version from 4 to 9, more than 100 files were changed
-- Fixed more than 600 hundred XSS issues in a month
+- Upgrade web-component angular version from 7 to 12 without any breaking
+- Fixed more than 600 XSS issues and 100 SQL injection issues in a month
+- Upgrade Bridge application to work with new SICS system, found vendor bug without source code.
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
 - Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
 - Achieve user friendly UI in the low cost, introducing AngularJs and Angular, web component and Font Awesome
@@ -55,7 +57,7 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector, model file selector, orig of business selector, deal selector and so on
 - Designed and implemented multiple web components on Angular: Premium calculator, structure calculator, Cyber selector, Pricing result and son on
 - Improve security by introducing three generation authentication :  Kerberos SSO and SSL, KeyCloak, Cognito
-- Designed and implemented contract history tool in a low cost to supporting future fields changing and fields groups
+- Designed and implemented program and contract history tool on a generic way in a low cost to supporting future fields changing and fields groups
 - Provided permission checking tool for admin in a low cost
 
 #### Environment: 
