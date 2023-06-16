@@ -31,11 +31,11 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect/Sr Full Stack Developer
 - Obviously reduce maintenance cost on the 15 yrs legacy VCAPS system by using modern technology and smart design
-- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
+- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Angular, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
 - Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
-- Smoothly integrated new Angular UI with old UI by using web components, build pipelines and angular multiple projects
+- Smoothly integrated new Angular UI with old UI by using web components, build up pipelines and angular multiple projects
 - Upgrade vcaps2ui angular version from 4 to 9, more than 100 files were changed
 - Upgrade web-component angular version from 7 to 12 without any breaking
 - Fixed more than 600 XSS issues and 100 SQL injection issues in a month
