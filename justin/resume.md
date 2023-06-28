@@ -16,11 +16,11 @@ http://www.linkedin.com/in/justin01wu
 ## TECHNICAL SKILLS
 Type | Skills
 ------------ | -------------
-Language | Java(19yrs), JavaScript(19yrs), SQL(24yrs), TypeScript(3yrs), Python, XML, 
+Language | Java(20yrs), JavaScript(20yrs), SQL(24yrs), TypeScript(5yrs), Python, XML, 
 Platform | Linux(11yrs), AWS, Docker, Lambda, EC2, S3
 Framework | Spring(7yrs), Spring Boot(3yrs), Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
-Database | SQL Server(11yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | AngularJs(7yrs), Angular(5yrs), Angular material, Angular elements, JQuery, CSS3, web component 
+Database | SQL Server(12yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
+UI | Angular(5yrs), AngularJs(4yrs), Angular material, Angular elements, JQuery, CSS3, web component 
 CI/CD | Maven(7yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
 Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
 Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
@@ -31,7 +31,7 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect/Sr Full Stack Developer
 - Obviously reduce maintenance cost on the 15 yrs legacy VCAPS system by using modern technology and smart design
-- Conduct most of technical upgrading or framework switching  in the VCAPS: log4j, Connection Pool, Angular, Spring, Jersey, RESTful API, Jackson, Angular, Font Awesome, MicroService, SSO and etc.
+- Conduct most of technical upgrading or framework switching in the VCAPS: log4j, Connection Pool, Angular, Spring, Jersey, RESTful API, Jackson, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
 - Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
@@ -41,7 +41,8 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Fixed more than 600 XSS issues and 100 SQL injection issues in a month
 - Upgrade Bridge application to work with new SICS system, found vendor bug without source code.
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
-- Improve YELT performance 20 times faster on large file process while adding Chrome Supporting, Improve permission checking  50 times faster on large program
+- Improve YELT performance 20 times faster on large file process while adding Chrome Supporting
+- Provided permission checking tool for admin in a low cost, improve performance 50 times faster on large programs
 - Achieve user friendly UI in the low cost, introducing AngularJs and Angular, web component and Font Awesome
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
 - Seamless integrate angular project into a complicated legacy web page which has about 600k JS code
@@ -55,10 +56,10 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Setup modern build process for projects, improve build process on both Maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
 - Designed and implemented Chapter page navigator, cache service  and large file process on JavaScript
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, subclass selector, Authorize selector, model file selector, orig of business selector, deal selector and so on
-- Designed and implemented multiple web components on Angular: Premium calculator, structure calculator, Cyber selector, Pricing result and son on
-- Improve security by introducing three generation authentication :  Kerberos SSO and SSL, KeyCloak, Cognito
-- Designed and implemented program and contract history tool on a generic way in a low cost to supporting future fields changing and fields groups
-- Provided permission checking tool for admin in a low cost
+- Designed and implemented many web components on Angular: Premium calculator, structure calculator, Cyber selector, Pricing result, new portfolio model and son on
+- Improve security by introducing three generation authentication:  Kerberos SSO and SSL, KeyCloak, Cognito
+- Designed and implemented program and contract history tool on a generic way with low cost to supporting future fields changing and fields groups
+
 
 #### Environment: 
 Java, JavaScript, TypeScript, Html5, Web 2.0, Ajax, RESTful, JQuery, Java Decompiler, AngularJs, Angular, Angular material, Angular elements, JsTree, MicroService, CSS3, Eclipse, Json, Advanced Rest Client, jMockit, jshint, NTLM, SAML, H2, Jersey, Jackson, Maven, refactoring, Agile, JIRA, AVRO, Kafka, OpenId, KeyCloak, Cognito, AWS, EC2, S3, SVN, GIT, Jenkins, Spnego, Kerberos, NTLM, Nginx, docker, Lambda, AWS, Spring boot
