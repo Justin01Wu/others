@@ -54,10 +54,10 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Designed a framework to generate developer friendly RESTful API docs on integration testing result 
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both Maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
-- designed and implemented dynamic portfolio model file management on Angular, implemented generic sorting component
+- Designed and implemented dynamic portfolio model file management on Angular, implemented generic sorting component
 - Designed and implemented Chapter page navigator, cache service  and large file process on JavaScript
 - Designed and implemented more than a dozen of web components on AngularJs: program selector, Authorize selector, model file selector, orig of business selector, deal selector and so on
-- created tree style subclass selector, merge some subclass
+- Created tree style subclass selector on Angular, merge some subclass
 - Designed and implemented many web components on Angular: Premium calculator, structure calculator, Cyber selector, Pricing result, new portfolio model and son on
 - Improve security by introducing three generation authentication:  Kerberos SSO and SSL, KeyCloak, Cognito
 - Designed and implemented program and contract history tool on a generic way with low cost to supporting future fields changing and fields groups
