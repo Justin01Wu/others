@@ -10,7 +10,7 @@ http://www.linkedin.com/in/justin01wu
 - Demonstrated mastery in evaluating requirements with excellent communication skills 
 - More than 6 years experience on system design, solution providing with critical thinking
 - AWS Certified Developer and Solution Architect -Associate
-- Cost expert on learning, developing and maintaining
+- Cost expert on application life cycle 
 - Highest code quality in the team(based on bugs stats)
 
 ## TECHNICAL SKILLS
@@ -51,6 +51,8 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Setup Integration testing environment and designed 90% integration test cases
 - Found a smart way to detect legacy connection pool leaking 
+- Solved complicated conflict in jersey and logstash maven version
+- Designed dynamic portfolio model file, implement generic sorting component 
 - Designed a framework to generate developer friendly RESTful API docs on integration testing result 
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both Maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
