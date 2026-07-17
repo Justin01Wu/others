@@ -36,8 +36,8 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Split VCAPS into two applications and 5 modules, convert some parts into microService and moving some into AWS cloud 
 - Setup CICD pipeline, covering build, unit test, Integration testing, deploy, setup private Maven repo
 - Smoothly integrated new Angular UI with old UI by using web components with smart designs, build up UI pipelines with server side pipelines together
-- Upgrade vcaps2ui angular version from 4 to 9, more than 100 files were changed
-- Upgrade web-component angular version from 7 to 15 without any breaking
+- Upgrade vcaps2ui angular version from 4 to 7, 12, 15, 18, 21 without any breaking
+- removed Tiles from more than 200 JSP pages 
 - Fixed more than 600 XSS issues and 100 SQL injection issues in a month
 - Upgrade Bridge application to work with new SICS system, found vendor bug without source code.
 - Coordinated 5 developers on the new cession workflow to meet tough deadline on the wise decisions, which finished about 200 tasks in 2 months
@@ -57,7 +57,7 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Trained developers on message-oriented event driven programming, introducing event bus and message proxy
 - Setup modern build process for projects, improve build process on both Maven and Ant platform, reduce deploy time to 1 minute from 6 minutes
 - Designed and implemented dozens of Angular UI functions, include subclass selector, Premium calculator, structure calculator, Cyber selector, Pricing result, dynamic portfolio model file management, generic sorting component, chapter page navigator, cache service and large file process
-- Designed and implemented dozens web components on AngularJs: program selector, Authorize selector, model file selector, orig of business selector, deal selector and so on
+- Designed and implemented dozens web components on AngularJs: program selector, pricing result, simulation result, Authorize selector, model file selector, orig of business selector, deal selector and so on
 - migrated dozens of AngularJS functions into Angular: program selector, DnfAccountList 
 - Improve security by introducing three generation authentication:  Kerberos SSO and SSL, KeyCloak, Cognito
 - Designed and implemented program and contract history tool on a generic way with low cost to supporting future fields changing and fields groups
