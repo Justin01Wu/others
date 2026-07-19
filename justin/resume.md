@@ -30,6 +30,8 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 # WORK EXPERIENCE: 
 ### American International Group  - Validus Group(http://www.validusholdings.com/)  2014.09-present
 #### Role: Solution Architect/Sr Full Stack Developer
+- Converted all angular components into standalone ones with AI helpings 
+- created and maintained API design guideline: https://github.com/Justin01Wu/WebApp/blob/master/jersey2/Api_tips.md
 - Obviously reduce maintenance cost on the 15 yrs legacy VCAPS system by using modern technology and smart designs
 - Conduct most of technical upgrading or framework switching in the VCAPS: log4j, JasperReport, Connection Pool, Angular, Spring, Jersey, RESTful API, Jackson, Font Awesome, MicroService, SSO and etc.
 - Successfully modernize VCAPS system in low cost while adding new functions
@@ -47,7 +49,8 @@ Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 - Integrate with SICS,  KeyCloak, Active Directory, RMS, API gateway, and Exchange server, set up flexible data converting mechanism
 - Seamlessly integrate angular project into a complicated legacy web page which has about 600k JS code
 - Gradually replaced about 350 JSP/JSF pages in VCAPS with angular single page application project
-- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, Web component approach on complicated web pages, JavaScript name space management
+- Safe way to upgrade the system: gradual progress strategy on refactoring, Refactor legacy code carefully with excellent skills, JavaScript name space management
+- Figured out Web component approach on complicated web pages: https://github.com/Justin01Wu/angular-hello/blob/master/multiple/README.md
 - Improve software quality a lot by introducing integration testing in low cost, testability design, 
   modularity design, encapsulation, dependency management. Setup Integration testing environment and designed 90% integration test cases
 - Found a smart way to detect legacy connection pool leaking 
