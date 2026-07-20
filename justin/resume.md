@@ -7,11 +7,10 @@ Proven track record of modernizing multi-million dollar legacy systems, optimizi
 Expert in aligning technical strategies with business cost optimization.
 
 ## TECHNICAL SKILLS
-
-### Languages & Frameworks: Java, TypeScript, JavaScript, SQL, Python, Spring Boot, Spring MVC, Hibernate, JPA, Jersey, Angular, AngularJS, jQuery, HTML5, CSS3
-### Cloud & DevOps: AWS (EC2, S3, Lambda, SQS, SNS, DynamoDB, Cognito, API Gateway), Docker, CI/CD (Jenkins, Maven, Ant), Git, SVN, DevOps, Nginx
-### Data & Middleware: SQL Server, Oracle, MySQL, Cassandra, NoSQL, Kafka, Tomcat, JBoss, Apache
-### Security & Domains: OAuth2, KeyCloak, OpenID, SAML, Spnego, Kerberos, Microservices, SOA, RESTful APIs .
+ - Languages & Frameworks: Java, TypeScript, JavaScript, SQL, Python, Spring Boot, Spring MVC, Hibernate, JPA, Jersey, Angular, AngularJS, jQuery, HTML5, CSS3
+ - Cloud & DevOps: AWS (EC2, S3, Lambda, SQS, SNS, DynamoDB, Cognito, API Gateway), Docker, CI/CD (Jenkins, Maven, Ant), Git, SVN, DevOps, Nginx
+ - Data & Middleware: SQL Server, Oracle, MySQL, Cassandra, NoSQL, Kafka, Tomcat, JBoss, Apache
+ - Security & Domains: OAuth2, KeyCloak, OpenID, SAML, Spnego, Kerberos, Microservices, SOA, RESTful APIs .
 	
 ## PROFESSIONAL EXPERIENCE
 ### American International Group (AIG) — Validus Group | Burlington, ON
