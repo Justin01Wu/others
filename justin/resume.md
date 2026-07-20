@@ -38,9 +38,6 @@ Expert in aligning technical strategies with business cost optimization.
 - [2019 AWS Certified Solution Architect -Associate](./img/AWSCertifiedSolutionsArchitectAssociate.png)
 - 2018 Professional Scrum Master I  (Scrum.org)
 
-# Education
-- 1994-1997 Master on Mining system, GuiZhou University, China
-- 1990-1994 Bachelor on  Mining Machine, GuiZhou University, China
 
 
 
