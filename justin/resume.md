@@ -2,7 +2,6 @@
 Burlington, ON, L7T 2J1 • 226-338-5780 • justin01.wu@gmail.comlinkedin.com/in/justin01wu
 
 http://www.linkedin.com/in/justin01wu
-## OBJECTIVE: Results-driven Solution Architect / Sr Full stack Developer / Sr Java developer
 
 ## PROFESSIONAL SUMMARY
 Results-driven Solution Architect and Senior Full-Stack Engineer with over 20 years of expertise in enterprise software development, microservices design, and AWS cloud architecture. 
