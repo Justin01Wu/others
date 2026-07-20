@@ -7,20 +7,7 @@ Proven track record of modernizing multi-million dollar legacy systems, optimizi
 Expert in aligning technical strategies with business cost optimization.
 
 ## TECHNICAL SKILLS
-Type | Skills
------------- | -------------
-Language | Java(20yrs), JavaScript(20yrs), SQL(24yrs), TypeScript(5yrs), Python, XML, 
-Platform | Linux(11yrs), AWS, Docker, Lambda, EC2, S3, SQS, SNS
-Framework | Spring(7yrs), Spring Boot(4yrs), Hibernate, Jersey, Servlet/JSP, JSF, Lucene, Avro
-Database | SQL Server(12yrs), Oracle, MySQL, NoSQL, DynamoDb, Cassandra, Hibernate, JPA
-UI | Angular(5yrs), AngularJs(4yrs), Angular material, Angular elements, JQuery, CSS3, web component 
-CI/CD | Maven(8yrs), Ant, Jenkins, Agile, Git, Subversion, DevOps, JIRA, fishEye
-Testing | Junit, jMockit, Jmeter, Selenium, Integration testing
-Domain | SOA, MicroService, Design Patterns, RESTful, J2EE/Java EE, distributed 
-Security | OAuth , KeyCloak, Cognito, API Gateway, OpenID, Spnego, Kerberos, NTLM, SAML
-Server | Tomcat, Apache, JBoss, Geronimo, Kafka, Nginx
 
-## TECHNICAL SKILLS
 ### Languages & Frameworks: 
 	Java, TypeScript, JavaScript, SQL, Python, Spring Boot, Spring MVC, Hibernate, JPA, Jersey, Angular, AngularJS, jQuery, HTML5, CSS3
 ### Cloud & DevOps: 
