@@ -10,10 +10,10 @@ Expert in aligning technical strategies with business cost optimization.
  - Languages & Frameworks: Java, TypeScript, SQL, Python, Spring Boot, Hibernate, JPA, Jersey, Angular, HTML5, CSS3
  - Cloud & DevOps: AWS (EC2, S3, Lambda, SQS, SNS, DynamoDB, Cognito, API Gateway), Docker, CI/CD (Jenkins, Maven, Ant), Git, SVN, DevOps, Nginx
  - Data & Middleware: SQL Server, Oracle, MySQL, Cassandra, NoSQL, Kafka, Tomcat, JBoss, Apache
- - Security & Domains: OAuth2, KeyCloak, OpenID, SAML, Spnego, Kerberos, Microservices, SOA, RESTful APIs .
+ - Security & Domains: OKTA, OAuth2, KeyCloak, OpenID, SAML, Spnego, Kerberos, Microservices, RESTful APIs .
 	
 ## PROFESSIONAL EXPERIENCE
-### American International Group (AIG) — Validus Group | Burlington, ON
+### American International Group (AIG) — Validus/Talbot Group | Waterloo, ON
 ### Solution Architect / Senior Full-Stack Developer | September 2014 – Present
  - Architecture Modernization: Spearheaded the architectural migration of a 15-year legacy core application (VCAPS) by splitting the monolith into 2 primary applications and 5 decoupled microservices integrated with AWS cloud infrastructure.
  - UI Framework Evolution: Orchestrated a zero-downtime, continuous UI upgrade strategy for enterprise Angular web applications, seamlessly migrating frameworks from version 4 sequentially up to version 21.
